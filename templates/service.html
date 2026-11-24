@@ -1,6 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Service</h1>
-{% for g in service %}<h2>{{ g.group }}</h2>
-<ul class="dated">{% for it in g['items'] %}<li><span class="y">{{ it.year or '' }}</span><span>{{ it.text | md }}</span></li>{% endfor %}</ul>{% endfor %}
-{% endblock %}

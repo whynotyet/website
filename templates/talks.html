@@ -1,8 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Talks</h1>
-<h2>Invited talks and panels</h2>
-<ul class="dated">{% for t in talks.invited %}<li><span class="y">{{ t.year }}</span><span>{{ t.text | md }}</span></li>{% endfor %}</ul>
-<h2>Conference presentations</h2>
-<ul class="dated">{% for t in talks.conference %}<li><span class="y">{{ t.year }}</span><span>{{ t.text | md }}</span></li>{% endfor %}</ul>
-{% endblock %}

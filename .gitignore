@@ -1,0 +1,4 @@
+_site/
+cv/*.pdf
+cv/*.docx
+__pycache__/

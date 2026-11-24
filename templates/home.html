@@ -1,26 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-<p class="lede">{{ site.lede }}</p>
-<ul class="roles">
-{% for r in site.roles %}<li><a href="{{ r.url }}">{{ r.text }}</a></li>{% endfor %}
-{% for f in site.fellowships %}<li class="muted">{{ f }}</li>{% endfor %}
-</ul>
-
-<h2>Current work</h2>
-<div class="projects">
-{% for p in site.projects %}<div><a href="{{ p.url }}">{{ p.name }}</a><p>{{ p.blurb }}</p></div>{% endfor %}
+<div class="intro">
+  <div class="intro-text">
+    <p><strong>Rene F. Kizilcec, Ph.D.</strong><br>
+    {% for r in site.roles %}{{ r.text_before }}<a href="{{ r.url }}">{{ r.link }}</a>{{ r.text_after }}<br>{% endfor %}
+    {% for f in site.fellowships %}{{ f }}<br>{% endfor %}</p>
+    <p>Contact: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>Office: {{ site.office }}</p>
+    <p><a href="{{ base }}/cv/Kizilcec_CV.pdf">Curriculum Vitae</a></p>
+  </div>
+  <figure class="intro-photo"><img src="{{ site.headshot }}" alt="Rene Kizilcec Photo"></figure>
 </div>
 
-<h2>Recent news</h2>
-<ul class="news">
-{% for n in site.news[:6] %}<li><time>{{ n.date }}</time><div>{{ n.text | md }}</div></li>{% endfor %}
-</ul>
+<p><strong>Bio (short):</strong> {{ site.bio_short | md }}</p>
+<p><strong>Bio (long):</strong> {{ site.bio_long[0] | md }}</p>
+{% for para in site.bio_long[1:] %}<p>{{ para | md }}</p>{% endfor %}
 
-<h2>Bio</h2>
-{% for para in site.bio_long %}<p>{{ para }}</p>{% endfor %}
-<h3>Short bio, for introductions</h3>
-<p class="small">{{ site.bio_short }}</p>
+{% if site.news %}
+<h2>Recent News</h2>
+<ul class="news">{% for n in site.news[:6] %}<li><strong>{{ n.date }}</strong> {{ n.text | md }}</li>{% endfor %}</ul>
+{% endif %}
 
-<h2>Contact</h2>
-<p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br><span class="muted">{{ site.office }}</span></p>
+<h2>Selected Press</h2>
+{% if media %}<p><strong>Recent coverage:</strong> {% for m in media %}{% if m.url %}<a href="{{ m.url }}">{{ m.text | striptags_md }}</a>{% else %}{{ m.text | md }}{% endif %}{% if not loop.last %}; {% endif %}{% endfor %}.</p>{% endif %}
+{% for t in site.press_topics %}<p><strong>On {{ t.topic }}:</strong> {% for name, url in t.links %}<a href="{{ url }}">{{ name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endfor %}
 {% endblock %}

@@ -1,20 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Publications</h1>
-<div class="filters" role="search">
-  <input id="q" type="search" placeholder="Search titles, authors, venues" aria-label="Search publications">
-  <button type="button" data-f="all" aria-pressed="true">All</button>
-  {% for k, label in type_labels %}<button type="button" data-f="{{ k }}" aria-pressed="false">{{ label }}</button>{% endfor %}
-</div>
-<p class="count" id="count" aria-live="polite">{{ pubs|length }} publications. Full list also on <a href="{{ site.scholar }}">Google Scholar</a>.</p>
+<p>You can find me on <a href="{{ site.scholar }}">Google Scholar</a>. My <a href="{{ base }}/cv/Kizilcec_CV.pdf">CV</a> lists publications by type.</p>
+<p class="disclaimer"><em>Disclaimer: Electronic copies of papers are provided as a professional courtesy to ensure timely dissemination of academic work for individual, non-commercial purposes. Copyright resides with the respective copyright holders, as stated within each paper. These files may not be re-posted without permission.</em></p>
 {% for y, items in by_year %}
-<section class="year"><h2{% if y == "Forthcoming" %} class="fwd"{% endif %}>{{ y }}</h2><div>{% for p in items %}{% include "_pub.html" %}{% endfor %}</div></section>
+<h2 class="year">{{ y }}</h2>
+{% for p in items %}<p class="pub">{{ p.cite_html }}{% if p.note %} <strong>{{ p.note }}</strong>{% endif %}</p>{% endfor %}
 {% endfor %}
-{% endblock %}
-{% block scripts %}
-<script>
-(()=>{const q=document.getElementById('q'),bs=[...document.querySelectorAll('.filters button')],c=document.getElementById('count');let f='all';
-function run(){const t=q.value.trim().toLowerCase();let n=0;document.querySelectorAll('.year').forEach(y=>{let k=0;y.querySelectorAll('.pub').forEach(p=>{const ok=(f==='all'||p.dataset.type===f)&&(!t||p.dataset.text.includes(t));p.hidden=!ok;if(ok)k++;});y.hidden=!k;n+=k;});c.textContent=n+(n===1?' publication':' publications')+(t||f!=='all'?' match.':'.');}
-bs.forEach(b=>b.addEventListener('click',()=>{f=b.dataset.f;bs.forEach(x=>x.setAttribute('aria-pressed',x===b));run();}));q.addEventListener('input',run);})();
-</script>
 {% endblock %}
