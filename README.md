@@ -7,7 +7,7 @@ data/            <- the only place to edit content
   profile.yml       name, contact, employment, education
   publications.yml  every paper (newest first within each type)
   grants.yml  awards.yml  talks.yml  teaching.yml  advising.yml  service.yml  media.yml
-  site.yml          website-only text: bio, roles, projects, news, press, resources
+  site.yml          website-only text: bio, roles, news, press, course descriptions, resources
 scripts/
   build_cv.py       -> cv/Kizilcec_CV.docx and cv/Kizilcec_CV.pdf
   build_site.py     -> _site/ (static HTML)
@@ -16,6 +16,8 @@ wp-content/         PDFs carried over from the old WordPress site (same URLs)
 ```
 
 Every push to `main` rebuilds the CV and the site and publishes them (GitHub Actions → Pages).
+The website has four pages (About, Publications, Teaching, Resources), styled after the old
+WordPress (Twenty Nineteen) site. The CV has the full record (talks, grants, service, advising).
 The CV is always at https://rene.kizilcec.com/cv/Kizilcec_CV.pdf (Word version: `.docx` at the same path).
 
 ## Adding things

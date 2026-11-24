@@ -1,8 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Press</h1>
-<h2>Recent coverage</h2>
-<ul class="plain">{% for m in media %}<li>{% if m.url %}<a href="{{ m.url }}">{{ m.text }}</a>{% else %}{{ m.text | md }}{% endif %}</li>{% endfor %}</ul>
-<h2>By topic</h2>
-{% for t in site.press_topics %}<p><strong>{{ t.topic }}:</strong> {% for name, url in t.links %}<a href="{{ url }}">{{ name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endfor %}
-{% endblock %}

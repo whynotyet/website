@@ -39,6 +39,19 @@ env = Environment(loader=FileSystemLoader(os.path.join(ROOT, "templates")),
                   autoescape=select_autoescape(["html"]))
 env.filters["md"] = md
 env.filters["authors"] = authors
+env.filters["striptags_md"] = lambda s: re.sub(r"\*+", "", s or "")
+
+
+def cite_html(p):
+    """The CV citation, with the title linked to the PDF (preferred) or publisher page, as on the old site."""
+    cite, title = p["cite"], (p.get("title") or "").strip('"“”')
+    href = p.get("pdf") or p.get("url")
+    i = cite.find(title) if title and href else -1
+    if i < 0:
+        return md(cite)
+    if href.startswith("/"):
+        href = BASE + href if os.path.exists(os.path.join(ROOT, href.lstrip("/"))) else "https://rene.kizilcec.com" + href
+    return Markup(md(cite[:i]) + Markup('<a href="%s">' % html.escape(href)) + md(title) + Markup("</a>") + md(cite[i + len(title):]))
 
 site = load("site")
 profile = load("profile")
@@ -53,6 +66,7 @@ for p in pubs:
     y = p.get("year")
     p["sort_year"] = y if isinstance(y, int) else 9999
     p["year_label"] = str(y) if isinstance(y, int) else "Forthcoming"
+    p["cite_html"] = cite_html(p)
 pubs_sorted = sorted(pubs, key=lambda p: -p["sort_year"])  # stable: keeps CV order within year
 by_year = []
 for p in pubs_sorted:
@@ -82,17 +96,12 @@ ctx = dict(
 PAGES = {
     "index.html": ("home.html", "About"),
     "publications/index.html": ("publications.html", "Publications"),
-    "talks/index.html": ("talks.html", "Talks"),
-    "grants/index.html": ("grants.html", "Grants & awards"),
     "teaching/index.html": ("teaching.html", "Teaching"),
-    "mentoring/index.html": ("mentoring.html", "Mentoring"),
-    "service/index.html": ("service.html", "Service"),
-    "press/index.html": ("press.html", "Press"),
     "resources/index.html": ("resources.html", "Resources"),
 }
-NAV = [("/", "About"), ("/publications/", "Publications"), ("/talks/", "Talks"),
-       ("/grants/", "Grants & awards"), ("/teaching/", "Teaching"), ("/mentoring/", "Mentoring"),
-       ("/service/", "Service"), ("/press/", "Press"), ("/resources/", "Resources")]
+NAV = [("/", "About"), ("/publications/", "Publications"), ("/teaching/", "Teaching"),
+       ("/resources/", "Resources"), ("/cv/Kizilcec_CV.pdf", "CV")]
+BASE = os.environ.get("BASE_PATH", "").rstrip("/")   # e.g. "/website" on a github.io project URL
 
 if os.path.exists(OUT):
     shutil.rmtree(OUT)
@@ -102,14 +111,15 @@ for out, (tpl, title) in PAGES.items():
     os.makedirs(os.path.dirname(path), exist_ok=True)
     here = "/" + out.replace("index.html", "")
     with open(path, "w", encoding="utf-8") as f:
-        f.write(env.get_template(tpl).render(**ctx, title=title, nav=NAV, here=here))
+        f.write(env.get_template(tpl).render(**ctx, title=title, nav=NAV, here=here, base=BASE,
+                                             hero=(tpl == "home.html")))
 
 # old WordPress URLs -> new pages (WordPress used the same slugs for most)
 for old in ("cv",):
     os.makedirs(os.path.join(OUT, old), exist_ok=True)
     with open(os.path.join(OUT, old, "index.html"), "w") as f:
-        f.write('<!doctype html><meta http-equiv="refresh" content="0; url=/cv/Kizilcec_CV.pdf">'
-                '<link rel="canonical" href="/cv/Kizilcec_CV.pdf"><a href="/cv/Kizilcec_CV.pdf">CV</a>')
+        f.write('<!doctype html><meta http-equiv="refresh" content="0; url=' + BASE + '/cv/Kizilcec_CV.pdf">'
+                '<a href="' + BASE + '/cv/Kizilcec_CV.pdf">CV</a>')
 
 for d in ("assets", "wp-content"):
     if os.path.exists(os.path.join(ROOT, d)):

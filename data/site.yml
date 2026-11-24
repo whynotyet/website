@@ -2,24 +2,25 @@
 title: Rene F. Kizilcec
 url: https://rene.kizilcec.com
 headshot: https://rene.kizilcec.com/wp-content/uploads/2026/01/Rene-Kizilcec-Photo-2025.jpg  # TODO: copy into assets/img/ before switching DNS
-roles:
-  - text: Associate Professor of Information Science, Cornell University
-    url: https://infosci.cornell.edu/
-  - text: Director, Future of Learning Lab
-    url: https://learning.cis.cornell.edu/
-  - text: Principal Investigator, National Tutoring Observatory
-    url: https://nationaltutoringobservatory.org/
-  - text: Faculty Director, AI-Ready Workforce Initiative
-    url: https://ai-ready-workforce.ai.cornell.edu/
+roles:   # shown at the top of the About page
+  - {text_before: "Associate Professor, ", link: "Department of Information Science", url: "https://infosci.cornell.edu/", text_after: ", Cornell"}
+  - {text_before: "Director, ", link: "Future of Learning Lab", url: "https://learning.cis.cornell.edu/", text_after: ""}
+  - {text_before: "Principal Investigator, ", link: "National Tutoring Observatory", url: "https://nationaltutoringobservatory.org/", text_after: ""}
+  - {text_before: "Faculty Director, ", link: "AI-ready Workforce Initiative", url: "https://ai-ready-workforce.ai.cornell.edu/", text_after: ""}
 fellowships:
-  - Alfred P. Sloan Research Fellow, 2024–26
-  - Jacobs Foundation Research Fellow, 2022–24
+  - Jacobs Foundation Research Fellow 2022-24
+  - Alfred P. Sloan Research Fellow 2024-26
 email: kizilcec@cornell.edu
-office: CIS Building Room 363, 107 Hoy Rd., Ithaca, NY 14853
+office: CIS Building Room 363, 127 Hoy Rd., Ithaca, NY 14853
 scholar: https://scholar.google.com/citations?user=l3ZT5GkAAAAJ
 orcid: https://orcid.org/0000-0001-6283-5546
 github: https://github.com/whynotyet
-social: []   # e.g. {name: Bluesky, url: ...}
+social:   # icons in the header; add Bluesky etc. here
+  - {name: Google Scholar, icon: scholar, url: "https://scholar.google.com/citations?user=l3ZT5GkAAAAJ"}
+  - {name: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ren%C3%A9-f-kizilcec-0557a841/"}
+  - {name: Facebook, icon: facebook, url: "https://www.facebook.com/rfkizilcec"}
+  - {name: Twitter, icon: twitter, url: "https://twitter.com/whynotyet"}
+header_image: https://rene.kizilcec.com/wp-content/uploads/2019/02/2016_0092_034_select.jpg  # TODO: copy into assets/img/ before switching DNS
 
 lede: >-
   I study how people learn with technology, and how to make that learning work
@@ -28,8 +29,8 @@ lede: >-
 
 bio_short: >-
   Rene Kizilcec is an Associate Professor in the Bowers College of Computing and
-  Information Science at Cornell University, where he directs the Cornell Future of
-  Learning Lab. Kizilcec studies behavioral, psychological, and computational aspects
+  Information Science at Cornell University, where he directs the [Cornell Future of
+  Learning Lab](https://learning.cis.cornell.edu/). Kizilcec studies behavioral, psychological, and computational aspects
   of technology in education to inform practices and policies that promote learning,
   equity, and academic and career success. His work has appeared in Science and the
   Proceedings of the National Academy of Sciences, won multiple awards, and is funded
@@ -39,30 +40,36 @@ bio_short: >-
 
 bio_long:
   - >-
-    Rene Kizilcec is an Associate Professor of Information Science, a graduate field
-    member in Communication and Physics, and the founding director of the Future of
-    Learning Lab at Cornell University. Kizilcec's research is on the use and impact of
-    technology in formal and informal learning environments (college classes, online
-    degree programs, mobile learning, professional development, MOOCs, and middle/high
-    school classrooms, etc.) and scalable interventions to broaden participation and
-    reduce achievement gaps. His recent work is on academic progress and algorithmic
+    Rene Kizilcec is an Associate Professor of Information Science, a graduate field member in
+    Communication and Physics, and the founding director of the [Future of Learning Lab](https://learning.cis.cornell.edu/)
+    at Cornell University. Kizilcec's research is on the use and impact of technology in formal and informal
+    learning environments (college classes, online degree programs, mobile learning, professional
+    development, MOOCs, and middle/high school classrooms, etc.) and scalable interventions to broaden
+    participation and reduce achievement gaps. His recent work is on academic progress and algorithmic
     transparency and fairness in predictive analytics in higher education.
   - >-
-    His research has been published in Science, Science Advances, Proceedings of the
-    National Academy of Sciences, Journal of Educational Psychology, Computers in Human
-    Behavior, Computers & Education, and in the proceedings of leading human-computer
-    interaction and education conferences like ACM CHI and Learning@Scale; his work
-    received multiple ACM Best Paper awards. He served as General Chair (2022) and
-    Program Co-Chair (2020) for ACM Learning at Scale, and as Steering Committee Chair
-    for the 2026 Festival of Learning in Seoul, South Korea (co-location of AIED, EDM,
-    and L@S).
+    His work has been funded by the NSF, Schmidt Futures Foundation, Jacobs Foundation, and Google. His
+    research has been published in Science, Science Advances, Proceedings of the National Academy of
+    Sciences, Journal of Educational Psychology, Computers in Human Behavior, Computers & Education, and in
+    the proceedings of leading human-computer interaction and education conferences like ACM CHI and
+    Learning@Scale; his work received multiple ACM Best Paper awards. He served as General Chair (2022) and
+    Program Co-Chair (2020) for the ACM Learning at Scale conference, and as Steering Committee Chair for the
+    [2026 Festival of Learning](https://festival-of-learning-2026.info/) in Seoul, South Korea (co-location
+    of AIED, EDM, and L@S).
   - >-
-    Kizilcec received a B.A. in Philosophy and Economics from University College London,
-    and a M.Sc. in Statistics and Ph.D. in Communication from Stanford, with a doctoral
-    thesis on designing psychologically welcoming online learning environments, which was
-    awarded the Nathan Maccoby Outstanding Dissertation Award. Prior to joining Cornell,
-    he spent a year as a research assistant professor at Arizona State University and as
-    a research director at the Stanford Graduate School of Education.
+    Kizilcec received a B.A. in Philosophy and Economics from University College London, and a M.Sc. in
+    Statistics and Ph.D. in Communication from Stanford, with a doctoral thesis on designing psychologically
+    welcoming online learning environments, which was awarded the Nathan Maccoby Outstanding Dissertation
+    Award. Prior to joining Cornell, he spent a year as a research assistant professor at Arizona State
+    University and as a research director at the Stanford Graduate School of Education.
+  - >-
+    Kizilcec is known for his research on understanding and supporting learners in online courses. He also
+    works on developing methods for the design and analysis of experiments. His recent work examined the
+    consequences of social identity threat, self-regulation, trust, and cultural differences on individual
+    behavior and performance using longitudinal field experiments. He leverages techniques from data mining,
+    machine learning, and natural language processing to examine behavior and motivation, reveal
+    heterogeneous treatment effects, and inform user-centered design.
+  - You can follow him on Twitter [@whynotyet](https://twitter.com/whynotyet).
 
 projects:
   - name: National Tutoring Observatory
@@ -122,20 +129,59 @@ press_topics:
       - [ACM Tech News, "http://technews.acm.org/#647428"]
       - [Stanford News, "http://news.stanford.edu/news/2013/april/online-learning-analytics-041113.html"]
 
+# Teaching page: full descriptions for courses listed in teaching.yml (matched by code).
 course_descriptions:
-  INFO 4100/5101: >-
-    An introductory survey of educational data science methods (predictive modeling,
-    classification, regression, causal inference) and learning science theories (active
-    learning, metacognition, self-regulated learning). Students collect and analyze their
-    own learning trace data. The course is described in more detail in a
-    [book chapter on Learning Analytics Education](/wp-content/uploads/2022/09/kizilcec2022LAEducation.pdf).
-  COMM/INFO 4800: >-
-    A senior capstone seminar on designing, piloting, and testing behavioral science
-    interventions that address social problems, combining applied quantitative methods
-    with social and behavioral theory.
-  INFO 6750: >-
-    A PhD-level, hands-on introduction to causal inference, design of experiments, and
-    open science.
+  INFO 4100/5101:
+    text: >-
+      Technology is transforming the ways we learn and teach. Learning is increasingly occurring on the
+      Internet or through educational software, which has led to an explosion of educational data. How can
+      all of the interaction, discourse, and performance data that are generated from online courses,
+      learning management systems, and student discussion forums be used to improve educational
+      effectiveness and support basic research on learning? This introductory course on Learning Analytics
+      provides a survey of educational data science methods (predictive modeling, classification,
+      regression, causal inference, and more) and learning science theories (active learning, Bloom's
+      taxonomy, metacognition, self-regulated learning, and more). Students will collect and analyze their
+      own learning trace data as part of the course.
+    outcomes_label: Learning Objectives
+    outcomes:
+      - Explain and demonstrate key insights from research in the learning sciences on how learning works
+      - Select and apply methods from educational data mining and learning analytics to analyze different kinds of educational data
+      - Evaluate the results of different methods for different applications
+      - Compare the strengths and weaknesses of methods for different applications
+      - Identify the potential benefits and risks of learning analytics for students, teachers, and institutions
+    after: The course is described in more detail in this [book chapter on Learning Analytics Education](https://rene.kizilcec.com/wp-content/uploads/2022/09/kizilcec2022LAEducation.pdf).
+  COMM/INFO 4800:
+    text: >-
+      "There is nothing as practical as a good theory," Kurt Lewin wrote. Today behavioral scientists build
+      on social scientific theories about human behavior to develop new intervention approaches that address
+      major challenges facing our society: poverty, poor health, educational inequalities, and many more.
+      This course is designed as a senior capstone seminar that equips students with the knowledge and skills
+      to analyze social problems, consider the ethical implications of intervention, design and pilot
+      appropriate interventions, implement and test them online, analyze and interpret the results, and
+      present policy-relevant findings. The course combines applied quantitative research methods and applied
+      social behavioral science theories to prepare students for careers in research, data science,
+      consulting, and policy evaluation.
+    outcomes_label: Learning Outcomes
+    outcomes:
+      - Analyze social problems in order to identify opportunities for improving social conditions
+      - Create and evaluate intervention designs and implementations to change social outcomes
+      - Apply quantitative research methods to analyze behavioral science interventions
+      - Interpret and present the results of behavioral science interventions
+      - Explain the ethical ramifications of intervening in people's lives
+    after: "Student reviews: [Annie (Sp'20)](https://cals.cornell.edu/news/annie-weiss-21-understanding-gendered-portrayal-food), [Tanmay (Sp'20)](https://cals.cornell.edu/news/tanmay-bansal-21-studying-behavioral-science-interventions)."
+  INFO 6750:
+    text: >-
+      This PhD-level research methods course provides a hands-on introduction to topics in causal inference,
+      design of experiments, and open science. Topics covered: potential outcomes framework for causal
+      inference, sampling distributions and randomization inference, types of random assignment, uses of
+      covariate measures in inference, statistical power, approaches to non-compliance, quasi-experimental
+      designs, replication, replicability, and open science practices. Short lectures, seminar discussion, and
+      hands-on practice are interwoven on a weekly basis to develop applied analytic skills. The course is
+      targeted at quantitative social scientists who strive to draw causal inferences in controlled lab or
+      field settings and uncontrolled real-world settings. This course should be taken after completing an
+      introductory course in statistics and an introductory quantitative research methods course. Ideally,
+      students taking this course are already conducting (quasi-) experimental research and are looking for
+      ways to improve the precision and power of their inferences.
 
 resources:
   - name: Value Relevance Affirmation

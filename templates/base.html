@@ -3,32 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if title != "About" %}{{ title }} | {% endif %}{{ site.title }}</title>
-<meta name="description" content="{{ site.lede }}">
+<title>{{ title }} - Rene Kizilcec</title>
+<meta name="description" content="{{ site.bio_short[:155] }}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300..700&family=Schibsted+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ base }}/assets/css/site.css">
 </head>
-<body>
-<div class="wrap">
-  <aside class="side">
-    <img src="{{ site.headshot }}" alt="Portrait of Rene Kizilcec">
-    <a class="name" href="/">{{ site.title }}</a>
-    <nav aria-label="Main">
-      {% for href, label in nav %}<a href="{{ href }}"{% if href == here %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
+<body class="{{ 'has-hero' if hero else 'plain' }}">
+<header class="site-header"{% if hero %} style="background-image: url('{{ site.header_image }}')"{% endif %}>
+  <div class="site-branding">
+    <p class="site-title"><a href="{{ base }}/">Rene Kizilcec</a></p>
+    <nav class="main-nav" aria-label="Main">
+      {% for href, label in nav %}<a href="{{ base }}{{ href }}"{% if href == here %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
     </nav>
-    <a class="cv" href="/cv/Kizilcec_CV.pdf">Download CV (PDF)</a>
-    <div class="contact">
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
-      <a href="{{ site.scholar }}">Google Scholar</a> &nbsp; <a href="{{ site.orcid }}">ORCID</a> &nbsp; <a href="{{ site.github }}">GitHub</a>
-      {% for s in site.social %}&nbsp; <a href="{{ s.url }}">{{ s.name }}</a>{% endfor %}
-    </div>
-  </aside>
-  <main id="content">
+    <nav class="social" aria-label="Profiles">
+      {% for s in site.social %}<a href="{{ s.url }}" aria-label="{{ s.name }}" title="{{ s.name }}">{% include "icons/" ~ s.icon ~ ".svg" ignore missing %}</a>{% endfor %}
+    </nav>
+  </div>
+  {% if hero %}<div class="hero-title"><h1 class="entry-title">{{ title }}</h1></div>{% endif %}
+</header>
+<main class="site-main">
+  {% if not hero %}<h1 class="entry-title">{{ title }}</h1>{% endif %}
+  <div class="entry-content">
 {% block content %}{% endblock %}
-  </main>
-  <footer>Updated {{ updated }}. Generated from the same data as the <a href="/cv/Kizilcec_CV.pdf">CV</a>.</footer>
-</div>
-{% block scripts %}{% endblock %}
+  </div>
+</main>
+<footer class="site-footer">Rene Kizilcec · Updated {{ updated }}</footer>
 </body>
 </html>

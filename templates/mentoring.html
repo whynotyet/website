@@ -1,6 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Mentoring</h1>
-<p>Current lab members and projects are on the <a href="https://learning.cis.cornell.edu/current-members">Future of Learning Lab site</a>.</p>
-{% for g in advising %}<h2>{{ g.group }}</h2><ul class="plain">{% for p in g.people %}<li>{{ p | md }}</li>{% endfor %}</ul>{% endfor %}
-{% endblock %}

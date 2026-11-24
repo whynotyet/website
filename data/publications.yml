@@ -148,7 +148,7 @@
   title: 'Standing up to problematic content on social media: which objection strategies draw the audience’s approval?'
   venue: '*Journal of Computer-Mediated Communication, 29*(1).'
   url: https://academic.oup.com/jcmc/article/29/1/zmad046/7477881
-  cite: 'Zhao, P., Bazarova, N. N., DiFranzo, D., Hui, W., Kizilcec, R. F., & Margolin, D. (2024). Standing up to problematic content on social media: which objection strategies draw the audience’s approval?. *Journal of Computer-Mediated Communication, 29*(1).'
+  cite: 'Zhao, P., Bazarova, N. N., DiFranzo, D., Hui, W., Kizilcec, R. F., & Margolin, D. (2024). Standing up to problematic content on social media: which objection strategies draw the audience’s approval? *Journal of Computer-Mediated Communication, 29*(1).'
 - type: journal
   year: 2024
   authors: Chen, Y., & Kizilcec, R. F.
@@ -208,15 +208,9 @@
   year: 2024
   authors: Kizilcec, R. F. & Mitchell, J. C..
   title: Remote Learning and Work
-  venue: '*IEEE Internet Computing*, 28(1).'
+  venue: '*IEEE Internet Computing*, *28*(1), 7–9.'
   url: https://ieeexplore.ieee.org/abstract/document/10438951/
-  cite: Kizilcec, R. F. & Mitchell, J. C.. (2024). Remote Learning and Work. *IEEE Internet Computing*, 28(1).
-- type: journal
-  year: 2024
-  authors: Zhao, P., Bazarova, N. N., DiFranzo, D., Hui, W., Kizilcec, R. F. & Margolin, D.
-  title: 'Standing up to problematic content on social media: which objection strategies draw the audience’s approval?'
-  venue: '*Journal of Computer-Mediated Communication*, 29(1).'
-  cite: 'Zhao, P., Bazarova, N. N., DiFranzo, D., Hui, W., Kizilcec, R. F. & Margolin, D. (2024). Standing up to problematic content on social media: which objection strategies draw the audience’s approval? *Journal of Computer-Mediated Communication*, 29(1).'
+  cite: Kizilcec, R. F. & Mitchell, J. C. (2024). Remote Learning and Work. *IEEE Internet Computing*, *28*(1), 7–9.
 - type: journal
   year: 2023
   authors: Rizvi, S., Rienties, B., Rogaten, J., & Kizilcec, R. F.
@@ -447,12 +441,6 @@
   title: 'Teachers’ perceived benefits and risks of AI across fifty‑five countries: An audit of LLM alignment and steerability'
   venue: In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)*
   cite: 'Tao, Y., Viberg, O., Dennison, D. V., Wu, Z., & Kizilcec, R. F. (2026). Teachers’ perceived benefits and risks of AI across fifty‑five countries: An audit of LLM alignment and steerability. In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)*'
-- type: conference
-  year: 2026
-  authors: Focsan, C. L., Kamikazi, M. C. A., Thompson, T., St. John, J., Vanacore, K. P., Thomas, D. R., Koedinger, K. R., & Kizilcec, R. F.
-  title: Does the TalkMoves codebook generalize to one‑on‑one tutoring and multimodal interaction?
-  venue: In *Proceedings of the 20th International Conference on Artificial Intelligence in Education (AIED 2026).*
-  cite: Focsan, C. L., Kamikazi, M. C. A., Thompson, T., St. John, J., Vanacore, K. P., Thomas, D. R., Koedinger, K. R., & Kizilcec, R. F. (2026). Does the TalkMoves codebook generalize to one‑on‑one tutoring and multimodal interaction? In *Proceedings of the 20th International Conference on Artificial Intelligence in Education (AIED 2026).*
 - type: conference
   year: 2025
   authors: Harvey, E., Kizilcec, R. F., & Koenecke, A.
@@ -926,8 +914,8 @@
   year: 2024
   authors: Kizilcec, R. F. & Mitchell, J. C.
   title: Remote Learning and Work
-  venue: '*IEEE Internet Computing*, 24(1).'
-  cite: Kizilcec, R. F. & Mitchell, J. C. (2024). Remote Learning and Work. *IEEE Internet Computing*, 24(1).
+  venue: '*IEEE Internet Computing*, *28*(1).'
+  cite: Kizilcec, R. F. & Mitchell, J. C. (2024). Remote Learning and Work. *IEEE Internet Computing*, *28*(1).
 - type: special_issue
   year: 2024
   authors: Viberg, O., Kizilcec, R. F., Wise, A. F., Jivet, I., & Nixon, N.

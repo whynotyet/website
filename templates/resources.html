@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Resources</h1>
-<p>Research materials from my work that others can reuse.</p>
 {% for r in site.resources %}<h2>{{ r.name }}</h2><p>{{ r.text | md }}</p>
-<p class="small">{% for name, url in r.links %}<a href="{{ url }}">{{ name }}</a>{% if not loop.last %} &nbsp; {% endif %}{% endfor %}</p>{% endfor %}
+<p>{% for name, url in r.links %}<a href="{{ url }}">{{ name }}</a>{% if not loop.last %} | {% endif %}{% endfor %}</p>{% endfor %}
 {% endblock %}
