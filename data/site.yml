@@ -1,7 +1,7 @@
 # Website-only content (not in the CV). Edit freely.
 title: Rene F. Kizilcec
 url: https://rene.kizilcec.com
-headshot: https://rene.kizilcec.com/wp-content/uploads/2026/01/Rene-Kizilcec-Photo-2025.jpg  # TODO: copy into assets/img/ before switching DNS
+headshot: /wp-content/uploads/2026/01/Rene-Kizilcec-Photo-2025.jpg
 roles:   # shown at the top of the About page
   - {text_before: "Associate Professor, ", link: "Department of Information Science", url: "https://infosci.cornell.edu/", text_after: ", Cornell"}
   - {text_before: "Director, ", link: "Future of Learning Lab", url: "https://learning.cis.cornell.edu/", text_after: ""}
@@ -20,7 +20,7 @@ social:   # icons in the header; add Bluesky etc. here
   - {name: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ren%C3%A9-f-kizilcec-0557a841/"}
   - {name: Facebook, icon: facebook, url: "https://www.facebook.com/rfkizilcec"}
   - {name: Twitter, icon: twitter, url: "https://twitter.com/whynotyet"}
-header_image: https://rene.kizilcec.com/wp-content/uploads/2019/02/2016_0092_034_select.jpg  # TODO: copy into assets/img/ before switching DNS
+header_image: /wp-content/uploads/2019/02/2016_0092_034_select.jpg
 
 lede: >-
   I study how people learn with technology, and how to make that learning work
@@ -149,7 +149,7 @@ course_descriptions:
       - Evaluate the results of different methods for different applications
       - Compare the strengths and weaknesses of methods for different applications
       - Identify the potential benefits and risks of learning analytics for students, teachers, and institutions
-    after: The course is described in more detail in this [book chapter on Learning Analytics Education](https://rene.kizilcec.com/wp-content/uploads/2022/09/kizilcec2022LAEducation.pdf).
+    after: The course is described in more detail in this [book chapter on Learning Analytics Education](/wp-content/uploads/2023/06/Learning_Analytics_Education.pdf).
   COMM/INFO 4800:
     text: >-
       "There is nothing as practical as a good theory," Kurt Lewin wrote. Today behavioral scientists build
