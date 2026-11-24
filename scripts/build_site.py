@@ -9,6 +9,7 @@ from markupsafe import Markup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA, OUT = os.path.join(ROOT, "data"), os.path.join(ROOT, "_site")
+BASE = os.environ.get("BASE_PATH", "").rstrip("/")   # e.g. "/website" on a github.io project URL
 
 
 def load(n):
@@ -16,12 +17,19 @@ def load(n):
         return yaml.safe_load(f)
 
 
+def local(href):
+    """Site-relative files: serve from this repo if present, else from the old WordPress host."""
+    if href.startswith("/wp-content/"):
+        return (BASE + href) if os.path.exists(os.path.join(ROOT, href.lstrip("/"))) else "https://rene.kizilcec.com" + href
+    return href
+
+
 def md(s):
     """Inline markdown: [text](url), **bold**, *italic*, bare URLs."""
     if s is None:
         return Markup("")
     s = html.escape(str(s), quote=False)
-    s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', s)
+    s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", lambda m: '<a href="%s">%s</a>' % (local(m.group(2)), m.group(1)), s)
     s = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"(?<![\w*])\*([^*]+)\*(?!\w)", r"<em>\1</em>", s)
     s = re.sub(r'(?<!href=")(https?://[^\s<]+[^\s<.,;)])', r'<a href="\1">link</a>', s)
@@ -39,6 +47,7 @@ env = Environment(loader=FileSystemLoader(os.path.join(ROOT, "templates")),
                   autoescape=select_autoescape(["html"]))
 env.filters["md"] = md
 env.filters["authors"] = authors
+env.filters["local"] = local
 env.filters["striptags_md"] = lambda s: re.sub(r"\*+", "", s or "")
 
 
@@ -49,8 +58,7 @@ def cite_html(p):
     i = cite.find(title) if title and href else -1
     if i < 0:
         return md(cite)
-    if href.startswith("/"):
-        href = BASE + href if os.path.exists(os.path.join(ROOT, href.lstrip("/"))) else "https://rene.kizilcec.com" + href
+    href = local(href)
     return Markup(md(cite[:i]) + Markup('<a href="%s">' % html.escape(href)) + md(title) + Markup("</a>") + md(cite[i + len(title):]))
 
 site = load("site")
@@ -101,7 +109,6 @@ PAGES = {
 }
 NAV = [("/", "About"), ("/publications/", "Publications"), ("/teaching/", "Teaching"),
        ("/resources/", "Resources"), ("/cv/Kizilcec_CV.pdf", "CV")]
-BASE = os.environ.get("BASE_PATH", "").rstrip("/")   # e.g. "/website" on a github.io project URL
 
 if os.path.exists(OUT):
     shutil.rmtree(OUT)
