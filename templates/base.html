@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{{ base }}/assets/css/site.css">
 </head>
 <body class="{{ 'has-hero' if hero else 'plain' }}">
-<header class="site-header"{% if hero %} style="background-image: url('{{ site.header_image }}')"{% endif %}>
+<header class="site-header"{% if hero %} style="background-image: url('{{ site.header_image|local }}')"{% endif %}>
   <div class="site-branding">
     <p class="site-title"><a href="{{ base }}/">Rene Kizilcec</a></p>
     <nav class="main-nav" aria-label="Main">
