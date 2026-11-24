@@ -1,0 +1,82 @@
+- year: '2026'
+  text: Gates Foundation, “Annotating Educational Public Resources for Assessment Developers” (1 year, $393,000; PI Rene Kizilcec)
+  amount: $393,000
+- year: '2026'
+  text: Gates Foundation, “Learning Engineering High-Dosage AI Math Tutoring” (2 years, $430,000 to Cornell; PI Susannah Loeb (Stanford), Co-PIs Rene Kizilcec, Third Space Learning)
+  amount: $430,000
+- year: '2026'
+  text: Friedrich Wilhelm Bessel Research Award (60,000 Euro; PI Rene Kizilcec), Alexander von Humboldt Foundation
+  amount: 60,000 Euro
+- year: '2026'
+  text: 'Cornell Center for Social Sciences, “Building an AI-Ready Workforce: Integrating K–12, Postsecondary, and Workforce Systems for the Age of AI” (1 year, $95,499; PI Rene Kizilcec; Co-PIs Steve Jackson (CIS), JR Keller (ILR), Rachel Slama (CIS)'
+  amount: $95,499
+- year: '2026'
+  text: Empire AI/Cornell AI Initiative, “Powering the National Tutoring Observatory to Advance the Science of Teaching and Learning” (1 year, 10,000 Service Units (SU) in compute, PI Rene Kizilcec, Co-PI Kirk Vanacore)
+- year: null
+  text: ILR Center for Applied Research on Work (CAROW), “The Role of Creativity Biases in Shaping Human-AI Collaboration and Creativity at Work.” (1 year, $30,000; Co-PIs Brian Lucas, Rene Kizilcec)
+  amount: $30,000
+- year: '2025'
+  text: Chan Zuckerberg Initiative, “National Tutoring Observatory” (2 years; $1,000,000; PI Rene Kizilcec, Co-PIs Justin Reich, Ken Koedinger, Rachel Slama)
+  amount: $1,000,000
+- year: '2024'
+  text: Gates Foundation, “National Tutoring Observatory” (2 years; $3,921,000; PI Rene Kizilcec, Co-PIs Justin Reich, Ken Koedinger, Rachel Slama)
+  amount: $3,921,000
+- year: '2024'
+  text: Alfred P. Sloan Research Fellowship Program 2024-26 (2 years; $75,000)
+  amount: $75,000
+- year: '2023'
+  text: 'NSF, “CAREER: Improving educators trust in and effective uses of predictive learning analytics to support students” (5 years; $807,582; PI Rene Kizilcec)'
+  amount: $807,582
+- year: '2022'
+  text: Schmidt Futures Foundation, “Fairness Analysis & Transfer Learning Hub” (2 years; $475,000; PI Kizilcec; Co-PIs Chris Brooks, Renzhe Yu)
+  amount: $475,000
+- year: '2022'
+  text: CIFAR and Jacobs Foundation, “Developing a Universal Framework for Teachers’ Adoption of Best Practices” (2 years; Canadian $50,000; PI Rene Kizilcec, Co-PIs Allyson Mckey, Lisa Bardach, Jamie Jirout, Dana McCoy, Luca Maria Pesando, David Yeager)
+  amount: Canadian $50,000
+- year: '2022'
+  text: Cornell-UCL Global Strategic Collaboration Award, “The Role of Transparency Frames in Human-AI Interaction and Trust” (1 year; $5,000 + £4,000; Co-PIs Rene Kizilcec, Mutlu Cukurova)
+  amount: $5,000
+- year: '2022'
+  text: USyd-Cornell Partnership Collaboration Award, “Testing a Framework for designing and evaluating scalable online assessment in a global higher education context”, (1 year; $7,500 + AUD 10,000; Co-PIs Rene Kizilcec, Elaine Huber)
+  amount: $7,500
+- year: '2021'
+  text: Jacobs Foundation Research Fellowship Program 2022-24 (3 years; CHF 165,000)
+  amount: CHF 165,000
+- year: '2021'
+  text: Schmidt Futures Foundation, “Instrumenting the Realizeit Platform” (2 years; $500,000; PI Rene Kizilcec; Co-PI Ryan Baker)
+  amount: $500,000
+- year: '2021'
+  text: Google Award for Inclusion Research Program, “Investigating How to Mitigate Bias in Predictive Models of Student Success Across Diverse Institutions” (1 year, $60,000; Co-PIs Chris Brooks, Rene Kizilcec)
+  amount: $60,000
+- year: '2021'
+  text: Cornell Center for Social Science Small Grant, “How University Status Impacts the Stigma Attached to Online Degrees” (1 year; $10,000; Co-PIs Heeyon Kim, Rene Kizilcec)
+  amount: $10,000
+- year: '2021'
+  text: Cornell Center for Social Science Conference Grant, “Learning at Scale Conference at Cornell Tech” (1 year; $3,000)
+  amount: $3,000
+- year: '2021'
+  text: 'NSF, “Medium: Deterring objectionable behavior and fostering emergent norms in social media conversations” (4 years; $1,197,740; PI Drew Margolin; Co-PIs Rene Kizilcec, Natalie Bazarova, Vanessa Bohns, Dominic DiFranzo)'
+  amount: $1,197,740
+- year: '2021'
+  text: Northeastern Center for Inclusive Computing Data Grant (2 years; $60,000; PI Hakim Weatherspoon; Co-PI Kizilcec)
+  amount: $60,000
+- year: '2020'
+  text: Cornell Center for Social Science Small Grant, “Content & Impact of Diversity Statements in Course Syllabi” (1 year; $12,000; PI Rene Kizilcec)
+  amount: $12,000
+- year: '2020'
+  text: Cornell Engaged Development Grant, “Plant-rich Diet” (2 year; $60,000; PI Marianne Krasny; Co-PI Rene Kizilcec)
+  amount: $60,000
+- year: '2019'
+  text: Mindset Scholars Network/Gates, “Learning Environments and the Mindsets and Performance of Students Within Them” (1.5 years; $75,000; PI Neil Lewis Jr.; Co-PI Rene Kizilcec)
+  amount: $75,000
+- year: '2019'
+  text: Cornell Active Learning Initiative, “Promoting Active Learning in Large Information Science Courses” (3 years; $950,000; PI Steven Jackson; Co-PI Rene Kizilcec)
+  amount: $950,000
+- year: '2019'
+  text: 'Cornell China Center Innovation Grant, “Environment and Education SDGs: Building capacity for local environmental practice through online learning in China” (2 years; $60,000; PIs Marianne Krasny and Rene Kizilcec)'
+  amount: $60,000
+- year: '2019'
+  text: Cornell Engaged Planning Grant, “Teaching Programming through Semantic Gamification” (1 year; $30,000; PI Francois Guimbretiere; Co-PIs Rene Kizilcec and Andrew Myers)
+  amount: $30,000
+- year: '2018'
+  text: Cornell Institute for the Social Sciences Collaborative Project, “Prosocial Behavior in the Digital Age” (3 years; PIs Natalie Bazarova, Drew Margolin; Co-PIs Vanessa Bohns, Rene Kizilcec, Janis Whitlock)

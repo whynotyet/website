@@ -1,0 +1,26 @@
+name: Rene F. Kizilcec
+address:
+- CIS Building Room 363
+- 107 Hoy Rd, Ithaca, NY 14853
+email: kizilcec@cornell.edu
+orcid: 0000-0001-6283-5546
+websites:
+- https://rene.kizilcec.com/
+- https://learning.cis.cornell.edu/
+employment:
+- years: 2024 – present
+  position: Associate Professor, Department of Information Science, Cornell University
+  details:
+  - Member, Graduate Field of Communication (since 2021)
+  - Member, Graduate Field of Physics (since 2021)
+  - Member, Graduate Minor Field of Data Science (since 2020)
+- years: 2018 – 2024
+  position: Assistant Professor, Department of Information Science, Cornell University
+  details: []
+- years: 2017 – 2018
+  position: Assistant Research Professor, School of Computing, Informatics, and Decision Systems Engineering, Arizona State University
+  details: []
+education:
+- text: Ph.D., Communication, Stanford University, 2017
+- text: M.S., Statistics, Stanford University, 2015
+- text: B.A. (1st class honors), Philosophy and Economics, University College London, 2011

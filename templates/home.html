@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="lede">{{ site.lede }}</p>
+<ul class="roles">
+{% for r in site.roles %}<li><a href="{{ r.url }}">{{ r.text }}</a></li>{% endfor %}
+{% for f in site.fellowships %}<li class="muted">{{ f }}</li>{% endfor %}
+</ul>
+
+<h2>Current work</h2>
+<div class="projects">
+{% for p in site.projects %}<div><a href="{{ p.url }}">{{ p.name }}</a><p>{{ p.blurb }}</p></div>{% endfor %}
+</div>
+
+<h2>Recent news</h2>
+<ul class="news">
+{% for n in site.news[:6] %}<li><time>{{ n.date }}</time><div>{{ n.text | md }}</div></li>{% endfor %}
+</ul>
+
+<h2>Bio</h2>
+{% for para in site.bio_long %}<p>{{ para }}</p>{% endfor %}
+<h3>Short bio, for introductions</h3>
+<p class="small">{{ site.bio_short }}</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br><span class="muted">{{ site.office }}</span></p>
+{% endblock %}

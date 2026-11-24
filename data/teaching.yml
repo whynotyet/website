@@ -1,0 +1,44 @@
+courses:
+- title: AI in Organizations
+  code: INFO 1170/5170
+  institution: Cornell
+  offered: Fall 2025
+- title: Learning Analytics
+  code: INFO 4100/5101
+  institution: Cornell
+  offered: Fall 2019, Spring 2019, Fall 2020, Fall 2021, Fall 2022, Spring 2024, Spring 2025, Spring 2026
+- title: Behavioral Science Interventions
+  code: COMM/INFO 4800
+  institution: Cornell
+  offered: Spring 2020 (with Neil Lewis Jr.) and Spring 2022
+- title: PhD Seminar on Learning and Technology
+  code: INFO 6940
+  institution: Cornell
+  offered: Spring 2023
+- title: Causal Inference and Design of Experiments
+  code: INFO 6750
+  institution: Cornell
+  offered: Fall 2018
+- title: Freshman Team Projects Course
+  code: INFO 1998
+  institution: Cornell
+  offered: Spring 2022, Fall 2022, Spring 2023, Fall 2023
+guest:
+- year: '2026'
+  text: '**Guest Lecture**, Empowering Teachers with Technology, Stanford GSE'
+- year: 2022, 2024
+  text: '**Guest Lecture**, 6.882 Ethical Machine Learning in Human Deployments, MIT'
+- year: '2021'
+  text: '**Guest Lecture**, CS 4660: Foundations in Educational Technology, Georgia Tech'
+- year: '2021'
+  text: '**Guest Lecture**, EDUC 131: Educational Technology, UC Irvine'
+- year: '2016'
+  text: '**Guest Lecture**, Learning Analytics Seminar, Stanford University'
+- year: 2014, 2015
+  text: '**Teaching Assistant**, “Online Learning Research Methods”, Stanford University'
+- year: '2014'
+  text: '**Guest Lecture**, Learning Analytics Seminar, George Mason University'
+- year: '2014'
+  text: '**Co-Instructor**, Workshop on questionnaire design, Stanford University'
+- year: 2010, 2011
+  text: '**Technology Camp Director**, TIC Summer Camp, McLean, VA. Held teacher-training workshops, designed and supervised programming classes.'

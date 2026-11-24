@@ -1,0 +1,117 @@
+- group: 'Institutional: Cornell University'
+  items:
+  - year: '2025'
+    text: '**Member**, Generative AI Education Committee'
+  - year: '2025'
+    text: '**Member**, IT Governance: Education & Pedagogy Domain Committee'
+  - year: 2024 SP
+    text: '**Director**, Broadening Participation Committee, Department of Information Science'
+  - year: 2022-23
+    text: '**Member**, Presidential Task Force on Undergraduate Admissions'
+  - year: 2022-23
+    text: '**Co-Director**, Broadening Participation Committee, Department of Information Science'
+  - year: 2022-23
+    text: '**Member**, Committee on Learning Outcomes, Bowers CIS College'
+  - year: 2022-23
+    text: '**Member**, Bowers CIS DEI Council'
+  - year: 2021-22
+    text: '**Interim Co-Chair**, Vice Provost’s Committee on Course Feedback/Teaching Evaluations'
+  - year: 2021-22
+    text: '**Member**, Hopper Dean Fellowship Selection Committee, Bowers CIS College'
+  - text: Since 2020 **Faculty Advisor Board Member**, McCormick Teaching Excellence Institute
+  - year: 2020-21
+    text: '**Member**, Vice Provost’s Committee on Course Feedback/Teaching Evaluations'
+  - year: 2020-22
+    text: '**Member**, Broadening Participation Committee, Department of Information Science'
+  - year: 2019-23
+    text: '**Co-Lead**, Active Learning Initiative, Department of Information Science'
+  - year: 2019-20
+    text: '**Member**, Undergraduate Committee, Department of Information Science'
+  - year: 2018-19
+    text: '**Member**, PhD Admissions Committee, Department of Information Science'
+  - year: 2018-20
+    text: '**Member**, Vice Provost’s Committee on Learning Analytics'
+- group: 'Scientific Community: Organizational/Leadership'
+  items:
+  - year: '2026'
+    text: '**General Co-Chair**, Festival of Learning 2026'
+  - year: 2024-25
+    text: '**Steering Committee Chair**, Festival of Learning 2026'
+  - year: 2019-2025
+    text: '**Associate Editor**, *Computer-Based Learning in Context*'
+  - year: 2023-2025
+    text: '**Steering Committee Chair**, ACM Learning at Scale'
+  - year: '2023'
+    text: '**Subcommittee Co-Chair (SC)**, Learning, Education, and Families, ACM CHI'
+  - year: '2022'
+    text: '**General Conference Chair**, ACM Learning at Scale'
+  - year: '2023'
+    text: '**Steering Committee Vice Chair**, ACM Learning at Scale'
+  - year: '2022'
+    text: '**Subcommittee Awards Representative**, ACM CHI'
+  - year: 2020-21
+    text: '**Steering Committee Member**, ACM Learning at Scale'
+  - year: '2022'
+    text: '**Program Committee Member**, ACM Learning at Scale; Learning Analytics & Knowledge; Educational Data Mining; Higher Education Advances'
+  - year: '2021'
+    text: '**Program Committee Member**, ACM CHI, ACM Learning at Scale, ACM FAccT'
+  - year: '2020'
+    text: '**Program Co-Chair**, ACM Learning at Scale'
+  - year: '2019'
+    text: '**Program Committee Member**, ACM CSCW, ACM CHI, ACM Learning at Scale'
+  - year: '2018'
+    text: '**Program Committee Member**, ACM Learning at Scale'
+  - year: '2017'
+    text: '**Program Committee Member**, ACM Learning at Scale, eMOOCs, Coursera Partners Conference'
+  - year: '2016'
+    text: '**Program Committee Member**, Learning with MOOCs Conference'
+  - year: '2015'
+    text: '**Program Committee Member**, ACM Learning at Scale'
+- group: 'Scientific Community: Grant Application/Manuscript Reviewing'
+  items:
+  - year: '2026'
+    text: '**Grant Reviewer**, Urban Institute, Tools Competition, MIT Solve'
+  - year: '2023'
+    text: '**Grant Reviewer**, Marsden Fund, Schmidt Futures Foundation (reviewer and finalist judge for LEVI), MIT Solve LEAP Challenge'
+  - year: '2023'
+    text: '**Journal Reviewer**, Management Science, Applied Psychology, Journal of Learning Analytics, British Journal of Educational Technology, Journal of Computer Assisted Learning, Routledge (book proposal)'
+  - year: '2022'
+    text: '**Journal Reviewer**, Scientific Reports, Journal of Computational Social Science, Frontiers in Psychology, British Journal of Educational Technology, Transactions on Learning Technologies, Journal of Computer-Assisted Learning, Computers & Education'
+  - year: '2022'
+    text: '**Ad-hoc Foundation Grant Reviewer**, National Science Foundation (NSF), Israel Science Foundation (ISF), Schmidt Futures Foundation'
+  - year: '2022'
+    text: '**Journal Reviewer**, Scientific Reports, Journal of Computational Social Science, Frontiers in Psychology, British Journal of Educational Technology, Transactions on Learning Technologies, Journal of Computer-Assisted Learning, Computers & Education'
+  - year: '2021'
+    text: '**Journal Reviewer**, Computers & Education, Computers in Human Behavior, Journal of Computer-Assisted Learning'
+  - year: '2021'
+    text: '**Journal Reviewer**, Educational Psychology, International Journal of Artificial Intelligence in Education, Transactions on Computer-Human Interaction (TOCHI), Education Research Review, IEEE Transactions on Learning Technologies, Computers & Education, Educational Researcher, Journal of Computer-Assisted Learning'
+  - year: '2021'
+    text: '**Grant Reviewer**, IES Higher Education Panel'
+  - year: '2020'
+    text: '**Journal Reviewer**: Science, AERA Open, Journal of Business Ethics, Computers & Education'
+  - year: '2020'
+    text: '**Grant Reviewer**, Spencer Foundation Large Grants'
+  - year: 2014-19
+    text: '**Reviewer**, Psychological Science, Oxford University Press, Computers in Human Behavior, Journal of Learning Analytics, International Journal of Artificial Intelligence in Education, International Conference on Learning Analytics & Knowledge, ACM CSCW Conference, IEEE Transactions on Signal Processing, Journal of Computer Assisted Learning, ACM TOCHI Transactions on Computer-Human Interaction, Computers & Education, IEEE Transactions on Learning Technologies, ACM CHI Human Factors in Computing Systems Conference'
+- group: Workshop Organization
+  items:
+  - year: '2026'
+    text: 'Vanacore, K., Thomas, D. R., Ribeiro, A., Bernado, J., Chandler, C., Crawford, C., Pietrzak, D., Whitmer, J., Godfrey, J., Loeb, S., Koedinger, K. R., Reich, J., Slama, R., & Kizilcec, R. F. (2026). Advancing the science of human and AI tutoring through shared infrastructure: A collaborative workshop. In E. G. Blanchard, G. Chen, M. Chi, & S. Isotani (Eds.), *Artificial intelligence in education: Late breaking results, WideAIED, practitioners, industry and policies, blue sky, doctoral consortium, FoL workshops and tutorials, FoL invited papers* (pp. 102–110). Springer.'
+  - year: '2026'
+    text: Vanacore, K., Kizilcec, R. F., Slama, R., Marland, J., Ahtisham, B., Zhou, Z., Thomas, D. R., Koedinger, K. R., Pietrzak, D., & Reich, J. (2026). National Tutoring Observatory’s interactive workshop on AI annotation and teacher analytics. *In Proceedings of the 16th International Learning Analytics & Knowledge Conference.*
+  - year: '2025'
+    text: 'Thomas, D. R., Demszky, D., Koedinger, K. R., Marland, J., Pietrzak, D., Reich, J., Slama, R., Toutziaridi, A., & Kizilcec, R. F. (2025). Advancing the science of teaching with tutoring data: A collaborative workshop with the National Tutoring Observatory. *In Proceedings of the 12th ACM Conference on Learning@ Scale (pp. 404–406).*'
+  - year: '2025'
+    text: 'Kizilcec, R. F., Baker, R. S., Brooks, C., Geathers, J., Hicke, Y., Moore, S., & Wu, B. (2025, July). Applications of Generative AI to Support Teaching and Learning in Higher Education: A Half-Day Workshop. *In International Conference on Artificial Intelligence in Education (pp. 267-274). Cham: Springer Nature Switzerland.*'
+  - year: '2025'
+    text: 'Cock, J., Stinar, F., Kizilcec, R., & Kaser, T. (2025). Applying DebiasEd: A Package for Mitigating Unfairness in Educational Data. In Proceedings of the 18th International Conference on Educational Data Mining (pp. 695-698).'
+  - year: '2023'
+    text: Viberg, O., Jivet, I., Kizilcec, R. F., & Scheffel, M. (2023). Fifth Workshop on Culturally-Aware Learning Analytics (CARLA). At the *European Conference on Technology Enhanced Learning (ECTEL)*.
+  - year: '2023'
+    text: Ritter, S., Heffernan, N., Williams, J.J., Lomas, D., Bicknell, K., Roschelle, J., Motz, B., McNamara, D., Baraniuk, R., Basu Mallick, D. and Kizilcec, R. (2023). Fourth Annual Workshop on A/B Testing and Platform-Enabled Learning Research. At the *ACM Conference on Learning@ Scale (L@S)*.
+  - year: '2023'
+    text: Smolansky, A., Nguyen, H. A., Kizilcec, R. F., McLaren, B. M. (2023). Equity, Diversity, and Inclusion in Educational Technology Research and Development. At the *International Conference on Artificial Intelligence in Education (AIED)*.
+  - year: '2022'
+    text: Ritter, S., Heffernan, N., Williams, J.J., Lomas, D., Motz, B., Basu Mallick, D., Bicknell, K., McNamara, D., Kizilcec, R.F., Roschelle, J. and Baraniuk, R., (2022). At the Third Annual Workshop on A/B Testing and Platform-Enabled Learning Research. At the ACM Conference on Learning@ Scale (L@S).
+  - year: '2014'
+    text: Williams, J. J., Kizilcec, R. F., Russell, D. M., & Klemmer, S. R. (2014). Learning innovation at scale. At the *ACM Conference on Human Factors in Computing Systems (CHI)*.

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Teaching</h1>
+{% for c in teaching.courses %}
+<h2>{{ c.code }}: {{ c.title }}</h2>
+{% if site.course_descriptions[c.code] %}<p>{{ site.course_descriptions[c.code] | md }}</p>{% endif %}
+<p class="muted small">Offered {{ c.offered }}</p>
+{% endfor %}
+<h2>Guest lectures and other teaching</h2>
+<ul class="dated">{% for g in teaching.guest %}<li><span class="y">{{ g.year }}</span><span>{{ g.text | md }}</span></li>{% endfor %}</ul>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Grants &amp; awards</h1>
+<p>My work is supported by the National Science Foundation, Gates Foundation, Chan Zuckerberg Initiative, Jacobs Foundation, Alfred P. Sloan Foundation, Alexander von Humboldt Foundation, Schmidt Futures, CIFAR, and Google.</p>
+<h2>Grants</h2>
+<ul class="dated">{% for g in grants %}<li><span class="y">{{ g.year or '' }}</span><span>{{ g.text | md }}</span></li>{% endfor %}</ul>
+<h2>Awards and fellowships</h2>
+<ul class="dated">{% for a in awards %}<li><span class="y">{{ a.year }}</span><span>{{ a.text | md }}</span></li>{% endfor %}</ul>
+{% endblock %}

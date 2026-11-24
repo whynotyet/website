@@ -1,0 +1,6 @@
+<article class="pub" data-type="{{ p.type }}" data-text="{{ (p.title ~ ' ' ~ (p.authors or '') ~ ' ' ~ (p.venue or ''))|lower }}">
+  <div class="t">{{ p.title | md }}{% if p.note %}<span class="award">{{ p.note }}</span>{% endif %}</div>
+  <div class="a">{{ p.authors | authors }}</div>
+  <div class="v">{{ (p.venue or '') | md }}</div>
+  {% if p.pdf or p.url %}<div class="links">{% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}{% if p.url %}<a href="{{ p.url }}">Publisher page</a>{% endif %}</div>{% endif %}
+</article>

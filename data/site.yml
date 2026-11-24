@@ -1,0 +1,152 @@
+# Website-only content (not in the CV). Edit freely.
+title: Rene F. Kizilcec
+url: https://rene.kizilcec.com
+headshot: https://rene.kizilcec.com/wp-content/uploads/2026/01/Rene-Kizilcec-Photo-2025.jpg  # TODO: copy into assets/img/ before switching DNS
+roles:
+  - text: Associate Professor of Information Science, Cornell University
+    url: https://infosci.cornell.edu/
+  - text: Director, Future of Learning Lab
+    url: https://learning.cis.cornell.edu/
+  - text: Principal Investigator, National Tutoring Observatory
+    url: https://nationaltutoringobservatory.org/
+  - text: Faculty Director, AI-Ready Workforce Initiative
+    url: https://ai-ready-workforce.ai.cornell.edu/
+fellowships:
+  - Alfred P. Sloan Research Fellow, 2024–26
+  - Jacobs Foundation Research Fellow, 2022–24
+email: kizilcec@cornell.edu
+office: CIS Building Room 363, 107 Hoy Rd., Ithaca, NY 14853
+scholar: https://scholar.google.com/citations?user=l3ZT5GkAAAAJ
+orcid: https://orcid.org/0000-0001-6283-5546
+github: https://github.com/whynotyet
+social: []   # e.g. {name: Bluesky, url: ...}
+
+lede: >-
+  I study how people learn with technology, and how to make that learning work
+  for everyone. My lab builds and tests AI tutors, learning analytics, and
+  behavioral interventions in real classrooms and online programs.
+
+bio_short: >-
+  Rene Kizilcec is an Associate Professor in the Bowers College of Computing and
+  Information Science at Cornell University, where he directs the Cornell Future of
+  Learning Lab. Kizilcec studies behavioral, psychological, and computational aspects
+  of technology in education to inform practices and policies that promote learning,
+  equity, and academic and career success. His work has appeared in Science and the
+  Proceedings of the National Academy of Sciences, won multiple awards, and is funded
+  by the National Science Foundation, Gates Foundation, Chan Zuckerberg Initiative, and
+  Jacobs Foundation. Kizilcec holds a Ph.D. in Communication and M.Sc. in Statistics
+  from Stanford University.
+
+bio_long:
+  - >-
+    Rene Kizilcec is an Associate Professor of Information Science, a graduate field
+    member in Communication and Physics, and the founding director of the Future of
+    Learning Lab at Cornell University. Kizilcec's research is on the use and impact of
+    technology in formal and informal learning environments (college classes, online
+    degree programs, mobile learning, professional development, MOOCs, and middle/high
+    school classrooms, etc.) and scalable interventions to broaden participation and
+    reduce achievement gaps. His recent work is on academic progress and algorithmic
+    transparency and fairness in predictive analytics in higher education.
+  - >-
+    His research has been published in Science, Science Advances, Proceedings of the
+    National Academy of Sciences, Journal of Educational Psychology, Computers in Human
+    Behavior, Computers & Education, and in the proceedings of leading human-computer
+    interaction and education conferences like ACM CHI and Learning@Scale; his work
+    received multiple ACM Best Paper awards. He served as General Chair (2022) and
+    Program Co-Chair (2020) for ACM Learning at Scale, and as Steering Committee Chair
+    for the 2026 Festival of Learning in Seoul, South Korea (co-location of AIED, EDM,
+    and L@S).
+  - >-
+    Kizilcec received a B.A. in Philosophy and Economics from University College London,
+    and a M.Sc. in Statistics and Ph.D. in Communication from Stanford, with a doctoral
+    thesis on designing psychologically welcoming online learning environments, which was
+    awarded the Nathan Maccoby Outstanding Dissertation Award. Prior to joining Cornell,
+    he spent a year as a research assistant professor at Arizona State University and as
+    a research director at the Stanford Graduate School of Education.
+
+projects:
+  - name: National Tutoring Observatory
+    url: https://nationaltutoringobservatory.org/
+    blurb: Open infrastructure and data for the science of human and AI tutoring.
+  - name: Future of Learning Lab
+    url: https://learning.cis.cornell.edu/
+    blurb: Student-built AI systems and field studies on how people learn with AI.
+  - name: AI-Ready Workforce Initiative
+    url: https://ai-ready-workforce.ai.cornell.edu/
+    blurb: Work simulations that measure AI, relational, and adaptive fluency.
+
+# Short dated updates shown on the home page (newest first). The weekly update
+# task adds items here; they can also seed social posts.
+news:
+  - date: 2026
+    text: Received the Friedrich Wilhelm Bessel Research Award from the Alexander von Humboldt Foundation.
+  - date: 2026
+    text: Co-leading the CIFAR Horizon Network "Learning through Conversation".
+  - date: 2026
+    text: New paper in *Science* with Igor Chirikov and Ivan Smirnov on generative AI use and misuse and the case for assessment reform.
+
+press_topics:
+  - topic: Behavioral science interventions at scale
+    links:
+      - [Forbes, "https://www.forbes.com/sites/dereknewton/2020/06/21/the-depressing-and-disheartening-news-about-moocs/"]
+      - [EdSurge, "https://www.edsurge.com/news/2020-06-17-massive-study-of-online-teaching-ends-with-surprising-and-deflating-result"]
+      - [The Harvard Gazette, "https://news.harvard.edu/gazette/story/2020/07/in-intervention-study-moocs-dont-make-the-grade/"]
+      - [Cornell Chronicle, "https://news.cornell.edu/stories/2020/06/study-no-single-solution-helps-all-students-complete-moocs"]
+  - topic: Online courses in higher education
+    links:
+      - [The Times, "https://www.thetimes.co.uk/edition/news/online-university-as-good-as-the-real-thing-just-less-fun-lxt38dvlj"]
+      - [The Daily Californian, "https://www.dailycal.org/2020/04/15/researchers-examine-financial-academic-impacts-of-online-instruction-in-stem/"]
+      - [Cornell Chronicle, "https://news.cornell.edu/stories/2020/04/stem-students-learn-well-online-classrooms"]
+  - topic: Self-regulation and culture
+    links:
+      - [Xinhua News, "http://news.xinhuanet.com/english/2017-04/18/c_136216799.htm"]
+      - [The Australian, "http://www.theaustralian.com.au/higher-education/online-primer-fails-in-collectivist-cultures/news-story/ea06b742e1722f035bda8f8d7b015aa0"]
+      - [Stanford News, "http://news.stanford.edu/2017/04/17/eight-minutes-online-learning-success/"]
+  - topic: AI transparency
+    links:
+      - [Harvard Business Review, "https://hbr.org/2018/07/we-need-transparency-in-algorithms-but-too-much-can-backfire"]
+      - [SiriusXM Business Radio (Wharton), "https://soundcloud.com/user-414944777/k-hammond-r-kizilcec"]
+  - topic: Closing global achievement gaps with psychological interventions
+    links:
+      - [PBS Rewire, "http://www.rewire.org/2017/01/30/online-course-writing-finish/"]
+      - [Inside Higher Ed, "https://www.insidehighered.com/news/2017/01/20/study-finds-simple-interventions-can-help-certain-online-learners-persist"]
+      - [EdSurge, "https://www.edsurge.com/news/2017-02-02-study-finds-tactics-to-help-close-global-mooc-achievement-gap"]
+      - [The Australian, "http://www.theaustralian.com.au/higher-education/welcome-effort-boosts-moocs/news-story/89d212be3c03592b29aa990fa8213c5b"]
+      - [Engadget, "https://www.engadget.com/2017/01/24/online-learning-improves-with-psychological-interventions/"]
+      - [Science Daily, "https://www.sciencedaily.com/releases/2017/01/170119143644.htm"]
+      - [MIT News, "http://news.mit.edu/2017/small-interventions-big-effects-closing-mooc-achievement-gap-0131"]
+      - [Stanford News, "http://news.stanford.edu/2017/01/19/brief-interventions-help-online-learners-persist-coursework-stanford-research-finds/"]
+  - topic: Learning analytics in MOOCs
+    links:
+      - [BBC, "http://www.bbc.com/future/story/20131029-we-can-build-the-perfect-teacher"]
+      - [ACM Tech News, "http://technews.acm.org/#647428"]
+      - [Stanford News, "http://news.stanford.edu/news/2013/april/online-learning-analytics-041113.html"]
+
+course_descriptions:
+  INFO 4100/5101: >-
+    An introductory survey of educational data science methods (predictive modeling,
+    classification, regression, causal inference) and learning science theories (active
+    learning, metacognition, self-regulated learning). Students collect and analyze their
+    own learning trace data. The course is described in more detail in a
+    [book chapter on Learning Analytics Education](/wp-content/uploads/2022/09/kizilcec2022LAEducation.pdf).
+  COMM/INFO 4800: >-
+    A senior capstone seminar on designing, piloting, and testing behavioral science
+    interventions that address social problems, combining applied quantitative methods
+    with social and behavioral theory.
+  INFO 6750: >-
+    A PhD-level, hands-on introduction to causal inference, design of experiments, and
+    open science.
+
+resources:
+  - name: Value Relevance Affirmation
+    text: A writing exercise to reduce achievement gaps in MOOCs. Kizilcec, Saltarelli, Reich, & Cohen (2017), *Science*, 355(6322), 251–252.
+    links: [[Instructions, "http://vr.kizilcec.com"], [Supporting materials, "http://www.sciencemag.org/content/355/6322/251/suppl/DC1"]]
+  - name: Interdependent Value Relevance Affirmation
+    text: An adaptation for interdependent cultural contexts such as China, with instructions in English and Mandarin. Kizilcec, Davis, & Cohen (2017), *L@S 2017*.
+    links: [[OSF, "https://osf.io/5cfjp/"]]
+  - name: Online Learning Enrollment Intentions (OLEI) Scale
+    text: A 13-item checklist of reasons for enrolling in an online course. Kizilcec & Schneider (2015), *ACM TOCHI*, 22(2).
+    links: [[Paper, "/wp-content/uploads/2013/02/kizilcec2015motivation.pdf"]]
+  - name: QualTurk
+    text: Flags low-quality Mechanical Turk respondents in Qualtrics surveys using completion time, pre-screening, and instruction checks.
+    links: [[GitHub, "https://github.com/whynotyet/QualTurk"]]
