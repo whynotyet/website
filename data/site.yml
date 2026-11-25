@@ -1,15 +1,15 @@
 # Website-only content (not in the CV). Edit freely.
 title: Rene F. Kizilcec
 url: https://rene.kizilcec.com
-headshot: /wp-content/uploads/2026/01/Rene-Kizilcec-Photo-2025.jpg
+headshot: /assets/img/rene-bw.jpg   # alternative: /assets/img/rene-2023-bw.jpg
 roles:   # shown at the top of the About page
   - {text_before: "Associate Professor, ", link: "Department of Information Science", url: "https://infosci.cornell.edu/", text_after: ", Cornell"}
   - {text_before: "Director, ", link: "Future of Learning Lab", url: "https://learning.cis.cornell.edu/", text_after: ""}
   - {text_before: "Principal Investigator, ", link: "National Tutoring Observatory", url: "https://nationaltutoringobservatory.org/", text_after: ""}
-  - {text_before: "Faculty Director, ", link: "AI-ready Workforce Initiative", url: "https://ai-ready-workforce.ai.cornell.edu/", text_after: ""}
+  - {text_before: "Faculty Director, ", link: "AI-Ready Workforce Initiative", url: "https://ai-ready-workforce.ai.cornell.edu/", text_after: ""}
 fellowships:
-  - Jacobs Foundation Research Fellow 2022-24
-  - Alfred P. Sloan Research Fellow 2024-26
+  - Alfred P. Sloan Research Fellow 2024–26
+  - Jacobs Foundation Research Fellow 2022–24
 email: kizilcec@cornell.edu
 office: CIS Building Room 363, 127 Hoy Rd., Ithaca, NY 14853
 scholar: https://scholar.google.com/citations?user=l3ZT5GkAAAAJ
@@ -18,7 +18,7 @@ github: https://github.com/whynotyet
 social:   # icons in the header; add Bluesky etc. here
   - {name: Google Scholar, icon: scholar, url: "https://scholar.google.com/citations?user=l3ZT5GkAAAAJ"}
   - {name: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ren%C3%A9-f-kizilcec-0557a841/"}
-  - {name: Facebook, icon: facebook, url: "https://www.facebook.com/rfkizilcec"}
+  - {name: ORCID, icon: orcid, url: "https://orcid.org/0000-0001-6283-5546"}
   - {name: Twitter, icon: twitter, url: "https://twitter.com/whynotyet"}
 header_image: /wp-content/uploads/2019/02/2016_0092_034_select.jpg
 
@@ -28,62 +28,64 @@ lede: >-
   behavioral interventions in real classrooms and online programs.
 
 bio_short: >-
-  Rene Kizilcec is an Associate Professor in the Bowers College of Computing and
-  Information Science at Cornell University, where he directs the [Cornell Future of
-  Learning Lab](https://learning.cis.cornell.edu/). Kizilcec studies behavioral, psychological, and computational aspects
-  of technology in education to inform practices and policies that promote learning,
-  equity, and academic and career success. His work has appeared in Science and the
-  Proceedings of the National Academy of Sciences, won multiple awards, and is funded
-  by the National Science Foundation, Gates Foundation, Chan Zuckerberg Initiative, and
-  Jacobs Foundation. Kizilcec holds a Ph.D. in Communication and M.Sc. in Statistics
-  from Stanford University.
+  Rene Kizilcec is an Associate Professor of Information Science at Cornell University, where he
+  directs the Future of Learning Lab and the National Tutoring Observatory. He studies how people learn
+  with technology and how to make it work for more learners. His work has appeared in Science and PNAS
+  and has been recognized with an NSF CAREER award, Sloan and Jacobs Foundation fellowships, and a
+  Humboldt Foundation research award. He holds a Ph.D. from Stanford.
 
-bio_long:
+# The "About" text on the home page
+bio:
   - >-
-    Rene Kizilcec is an Associate Professor of Information Science, a graduate field member in
-    Communication and Physics, and the founding director of the [Future of Learning Lab](https://learning.cis.cornell.edu/)
-    at Cornell University. Kizilcec's research is on the use and impact of technology in formal and informal
-    learning environments (college classes, online degree programs, mobile learning, professional
-    development, MOOCs, and middle/high school classrooms, etc.) and scalable interventions to broaden
-    participation and reduce achievement gaps. His recent work is on academic progress and algorithmic
-    transparency and fairness in predictive analytics in higher education.
+    Rene Kizilcec is an Associate Professor of Information Science at Cornell University, where he directs
+    the [Future of Learning Lab](https://learning.cis.cornell.edu/), leads the
+    [National Tutoring Observatory](https://nationaltutoringobservatory.org/), and is faculty director of the
+    [AI-Ready Workforce Initiative](https://ai-ready-workforce.ai.cornell.edu/). He studies how people learn
+    with technology and how to make it work for more learners, with AI tutors, learning analytics, and
+    behavioral interventions tested in college classrooms, online programs, and K–12 tutoring.
   - >-
-    His work has been funded by the NSF, Schmidt Futures Foundation, Jacobs Foundation, and Google. His
-    research has been published in Science, Science Advances, Proceedings of the National Academy of
-    Sciences, Journal of Educational Psychology, Computers in Human Behavior, Computers & Education, and in
-    the proceedings of leading human-computer interaction and education conferences like ACM CHI and
-    Learning@Scale; his work received multiple ACM Best Paper awards. He served as General Chair (2022) and
-    Program Co-Chair (2020) for the ACM Learning at Scale conference, and as Steering Committee Chair for the
-    [2026 Festival of Learning](https://festival-of-learning-2026.info/) in Seoul, South Korea (co-location
-    of AIED, EDM, and L@S).
-  - >-
-    Kizilcec received a B.A. in Philosophy and Economics from University College London, and a M.Sc. in
-    Statistics and Ph.D. in Communication from Stanford, with a doctoral thesis on designing psychologically
-    welcoming online learning environments, which was awarded the Nathan Maccoby Outstanding Dissertation
-    Award. Prior to joining Cornell, he spent a year as a research assistant professor at Arizona State
-    University and as a research director at the Stanford Graduate School of Education.
-  - >-
-    Kizilcec is known for his research on understanding and supporting learners in online courses. He also
-    works on developing methods for the design and analysis of experiments. His recent work examined the
-    consequences of social identity threat, self-regulation, trust, and cultural differences on individual
-    behavior and performance using longitudinal field experiments. He leverages techniques from data mining,
-    machine learning, and natural language processing to examine behavior and motivation, reveal
-    heterogeneous treatment effects, and inform user-centered design.
-  - You can follow him on Twitter [@whynotyet](https://twitter.com/whynotyet).
+    His research has appeared in Science and the Proceedings of the National Academy of Sciences and has
+    received multiple ACM best paper awards. He is a recipient of an NSF CAREER award, Alfred P. Sloan and
+    Jacobs Foundation research fellowships, and the Alexander von Humboldt Foundation's Friedrich Wilhelm
+    Bessel Research Award. He served as General Chair of ACM Learning at Scale and as Steering Committee
+    Chair of the 2026 Festival of Learning. He holds a B.A. in Philosophy and Economics from University
+    College London and an M.Sc. in Statistics and Ph.D. in Communication from Stanford.
 
-projects:
-  - name: National Tutoring Observatory
-    url: https://nationaltutoringobservatory.org/
-    blurb: Open infrastructure and data for the science of human and AI tutoring.
+projects:   # cards on the home page, each linking out
   - name: Future of Learning Lab
     url: https://learning.cis.cornell.edu/
-    blurb: Student-built AI systems and field studies on how people learn with AI.
+    logo: /assets/img/lab-logo.png
+    blurb: "My research group: people, projects and papers."
+  - name: National Tutoring Observatory
+    url: https://nationaltutoringobservatory.org/
+    logo: /assets/img/nto-logo.png
+    blurb: Open data and infrastructure for the science of tutoring.
   - name: AI-Ready Workforce Initiative
     url: https://ai-ready-workforce.ai.cornell.edu/
+    logo: /assets/img/aiw-logo.png
+    logo_text: "AI-Ready<br>Workforce"
     blurb: Work simulations that measure AI, relational, and adaptive fluency.
 
-# Short dated updates shown on the home page (newest first). The weekly update
-# task adds items here; they can also seed social posts.
+# "Selected publications" on the home page, by topic. Titles must match data/publications.yml.
+# Keep to the last four years.
+selected_publications:
+  - topic: Learning with AI
+    papers:
+      - A large‑scale analysis of student behavior with pedagogically constrained LLM tutors
+      - "Comparing Teacher and AI-Generated Feedback in the Writing Classroom: Experimental Results from Secondary School Classrooms"
+      - Teacher-AI collaboration for curating and customizing lesson plans in low-resource schools
+  - topic: The science of tutoring
+    papers:
+      - "From tutor moves to tutoring states: Modeling the timing and sequencing of pedagogical strategies for student engagement"
+      - "How well do large language models recognize instructional moves? Establishing baselines for foundation models in educational discourse"
+      - Data Annotation as Measurement
+  - topic: AI, fairness, and higher education
+    papers:
+      - Generative AI use and misuse call for assessment reform in higher education
+      - "“Don't Forget the Teachers”: Towards an Educator-Centered Understanding of Harms from Large Language Models in Education"
+      - A framework for auditing chatbots for dialect-based quality-of-service harms
+      - Cultural bias and cultural alignment of large language models
+
 news:
   - date: 2026
     text: Received the Friedrich Wilhelm Bessel Research Award from the Alexander von Humboldt Foundation.
@@ -92,45 +94,25 @@ news:
   - date: 2026
     text: New paper in *Science* with Igor Chirikov and Ivan Smirnov on generative AI use and misuse and the case for assessment reform.
 
-press_topics:
-  - topic: Behavioral science interventions at scale
-    links:
-      - [Forbes, "https://www.forbes.com/sites/dereknewton/2020/06/21/the-depressing-and-disheartening-news-about-moocs/"]
-      - [EdSurge, "https://www.edsurge.com/news/2020-06-17-massive-study-of-online-teaching-ends-with-surprising-and-deflating-result"]
-      - [The Harvard Gazette, "https://news.harvard.edu/gazette/story/2020/07/in-intervention-study-moocs-dont-make-the-grade/"]
-      - [Cornell Chronicle, "https://news.cornell.edu/stories/2020/06/study-no-single-solution-helps-all-students-complete-moocs"]
-  - topic: Online courses in higher education
-    links:
-      - [The Times, "https://www.thetimes.co.uk/edition/news/online-university-as-good-as-the-real-thing-just-less-fun-lxt38dvlj"]
-      - [The Daily Californian, "https://www.dailycal.org/2020/04/15/researchers-examine-financial-academic-impacts-of-online-instruction-in-stem/"]
-      - [Cornell Chronicle, "https://news.cornell.edu/stories/2020/04/stem-students-learn-well-online-classrooms"]
-  - topic: Self-regulation and culture
-    links:
-      - [Xinhua News, "http://news.xinhuanet.com/english/2017-04/18/c_136216799.htm"]
-      - [The Australian, "http://www.theaustralian.com.au/higher-education/online-primer-fails-in-collectivist-cultures/news-story/ea06b742e1722f035bda8f8d7b015aa0"]
-      - [Stanford News, "http://news.stanford.edu/2017/04/17/eight-minutes-online-learning-success/"]
-  - topic: AI transparency
-    links:
-      - [Harvard Business Review, "https://hbr.org/2018/07/we-need-transparency-in-algorithms-but-too-much-can-backfire"]
-      - [SiriusXM Business Radio (Wharton), "https://soundcloud.com/user-414944777/k-hammond-r-kizilcec"]
-  - topic: Closing global achievement gaps with psychological interventions
-    links:
-      - [PBS Rewire, "http://www.rewire.org/2017/01/30/online-course-writing-finish/"]
-      - [Inside Higher Ed, "https://www.insidehighered.com/news/2017/01/20/study-finds-simple-interventions-can-help-certain-online-learners-persist"]
-      - [EdSurge, "https://www.edsurge.com/news/2017-02-02-study-finds-tactics-to-help-close-global-mooc-achievement-gap"]
-      - [The Australian, "http://www.theaustralian.com.au/higher-education/welcome-effort-boosts-moocs/news-story/89d212be3c03592b29aa990fa8213c5b"]
-      - [Engadget, "https://www.engadget.com/2017/01/24/online-learning-improves-with-psychological-interventions/"]
-      - [Science Daily, "https://www.sciencedaily.com/releases/2017/01/170119143644.htm"]
-      - [MIT News, "http://news.mit.edu/2017/small-interventions-big-effects-closing-mooc-achievement-gap-0131"]
-      - [Stanford News, "http://news.stanford.edu/2017/01/19/brief-interventions-help-online-learners-persist-coursework-stanford-research-finds/"]
-  - topic: Learning analytics in MOOCs
-    links:
-      - [BBC, "http://www.bbc.com/future/story/20131029-we-can-build-the-perfect-teacher"]
-      - [ACM Tech News, "http://technews.acm.org/#647428"]
-      - [Stanford News, "http://news.stanford.edu/news/2013/april/online-learning-analytics-041113.html"]
-
-# Teaching page: full descriptions for courses listed in teaching.yml (matched by code).
 course_descriptions:
+  INFO 1170/5170:
+    text: >-
+      Artificial intelligence (AI) is impacting how organizations operate, make decisions, and deliver value
+      across various sectors, including education, law, creative industries, insurance, and information
+      technology. This course introduces the concepts, frameworks, and real-world applications needed to
+      critically analyze how AI is adopted in organizations and the effects it has on work, learning,
+      well-being, and society. Students will explore both the opportunities and risks of AI, including issues
+      of bias, privacy, and organizational responsibility. Weekly hands-on activities and discussions will
+      give students experience auditing or prototyping AI tools using no-code or low-code platforms, and case
+      studies will bring sector-specific challenges to life. A culminating project allows students to
+      investigate AI in a domain of their choice and present their insights in a university-wide showcase.
+    outcomes_label: Learning Objectives
+    outcomes:
+      - Explain core concepts, applications, and limitations of AI in organizational contexts
+      - Critically analyze the benefits, risks, and ethical considerations of AI adoption across sectors
+      - Apply interdisciplinary frameworks to assess AI's impact on work, learning, well-being, and society
+      - Prototype and audit AI-driven tools (using no-code/low-code environments) contextualized to specific organizations or industries
+      - Communicate technical and societal implications of AI effectively to varied audiences
   INFO 4100/5101:
     text: >-
       Technology is transforming the ways we learn and teach. Learning is increasingly occurring on the
@@ -183,16 +165,3 @@ course_descriptions:
       students taking this course are already conducting (quasi-) experimental research and are looking for
       ways to improve the precision and power of their inferences.
 
-resources:
-  - name: Value Relevance Affirmation
-    text: A writing exercise to reduce achievement gaps in MOOCs. Kizilcec, Saltarelli, Reich, & Cohen (2017), *Science*, 355(6322), 251–252.
-    links: [[Instructions, "http://vr.kizilcec.com"], [Supporting materials, "http://www.sciencemag.org/content/355/6322/251/suppl/DC1"]]
-  - name: Interdependent Value Relevance Affirmation
-    text: An adaptation for interdependent cultural contexts such as China, with instructions in English and Mandarin. Kizilcec, Davis, & Cohen (2017), *L@S 2017*.
-    links: [[OSF, "https://osf.io/5cfjp/"]]
-  - name: Online Learning Enrollment Intentions (OLEI) Scale
-    text: A 13-item checklist of reasons for enrolling in an online course. Kizilcec & Schneider (2015), *ACM TOCHI*, 22(2).
-    links: [[Paper, "/wp-content/uploads/2013/02/kizilcec2015motivation.pdf"]]
-  - name: QualTurk
-    text: Flags low-quality Mechanical Turk respondents in Qualtrics surveys using completion time, pre-screening, and instruction checks.
-    links: [[GitHub, "https://github.com/whynotyet/QualTurk"]]

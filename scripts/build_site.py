@@ -101,14 +101,58 @@ ctx = dict(
     selected=[p for p in pubs_sorted if p["type"] == "science"][:5],
 )
 
+def short_authors(a):
+    names = [x.strip() for x in re.split(r",\s*(?=[A-Z][\w'’\- ]+, [A-Z]\.)|,?\s*&\s*", a or "") if x.strip()]
+    last = [n.split(",")[0].strip() for n in names]
+    if len(last) > 4:
+        return ", ".join(last[:3]) + ", et al."
+    return ", ".join(last[:-1]) + " & " + last[-1] if len(last) > 1 else (last[0] if last else "")
+
+
+VENUE_ABBR = [("CHI Conference", "CHI"), ("Fairness, Accountability", "FAccT"), ("Computer Supported Cooperative Work", "CSCW"),
+              ("Learning@ Scale", "L@S"), ("Learning at Scale", "L@S"), ("AI, Ethics, and Society", "AIES"),
+              ("Proceedings of the National Academy of Sciences", "PNAS"), ("PNAS nexus", "PNAS Nexus")]
+
+
+def short_venue(v):
+    v = re.sub(r"^In\s+", "", v or "")
+    for key, abbr in VENUE_ABBR:
+        if key.lower() in v.lower():
+            return "*" + abbr + "*"
+    m = re.search(r"\(([A-Z][A-Za-z@&]+)\s*[’']\d\d\)", v)
+    if m:
+        return "*" + m.group(1) + "*"
+    m = re.match(r"\*([^*]+)\*", v)
+    name = m.group(1) if m else v.split(",")[0]
+    name = re.sub(r",?\s*\d.*$", "", name).strip().rstrip(",.")
+    return "*" + name + "*"
+
+
+by_title = {p["title"]: p for p in pubs_sorted}
+
+
+def pub_view(t):
+    p = by_title.get(t)
+    if not p:
+        print("WARNING: selected publication not found:", t)
+        return None
+    href = p.get("pdf") or p.get("url")
+    return dict(p, href=local(href) if href else None,
+                short_authors=short_authors(p.get("authors")), short_venue=short_venue(p.get("venue")))
+
+
+selected = []
+for g in site.get("selected_publications", []):
+    papers = [v for v in (pub_view(t) for t in g["papers"]) if v]
+    if papers:
+        selected.append({"topic": g["topic"], "papers": papers})
+ctx["selected"] = selected
+
 PAGES = {
-    "index.html": ("home.html", "About"),
+    "index.html": ("home.html", ""),
     "publications/index.html": ("publications.html", "Publications"),
-    "teaching/index.html": ("teaching.html", "Teaching"),
-    "resources/index.html": ("resources.html", "Resources"),
 }
-NAV = [("/", "About"), ("/publications/", "Publications"), ("/teaching/", "Teaching"),
-       ("/resources/", "Resources"), ("/cv/Kizilcec_CV.pdf", "CV")]
+NAV = []
 
 if os.path.exists(OUT):
     shutil.rmtree(OUT)
@@ -122,11 +166,11 @@ for out, (tpl, title) in PAGES.items():
                                              hero=(tpl == "home.html")))
 
 # old WordPress URLs -> new pages (WordPress used the same slugs for most)
-for old in ("cv",):
+for old, target in (("cv", "/cv/Kizilcec_CV.pdf"), ("teaching", "/#teaching"), ("resources", "/")):
     os.makedirs(os.path.join(OUT, old), exist_ok=True)
     with open(os.path.join(OUT, old, "index.html"), "w") as f:
-        f.write('<!doctype html><meta http-equiv="refresh" content="0; url=' + BASE + '/cv/Kizilcec_CV.pdf">'
-                '<a href="' + BASE + '/cv/Kizilcec_CV.pdf">CV</a>')
+        f.write('<!doctype html><meta http-equiv="refresh" content="0; url=' + BASE + target + '">'
+                '<a href="' + BASE + target + '">Continue</a>')
 
 for d in ("assets", "wp-content"):
     if os.path.exists(os.path.join(ROOT, d)):
