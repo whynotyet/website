@@ -16,8 +16,10 @@ wp-content/         PDFs carried over from the old WordPress site (same URLs)
 ```
 
 Every push to `main` rebuilds the CV and the site and publishes them (GitHub Actions → Pages).
-The website has four pages (About, Publications, Teaching, Resources), styled after the old
-WordPress (Twenty Nineteen) site. The CV has the full record (talks, grants, service, advising).
+The website is a home page (bio, project cards, news, selected publications, teaching with
+expandable course descriptions) plus a full publications page. The CV has the full record
+(talks, grants, service, advising). Home-page text, project cards, the selected-publication list
+and course descriptions are in `data/site.yml`.
 The CV is always at https://rene.kizilcec.com/cv/Kizilcec_CV.pdf (Word version: `.docx` at the same path).
 
 ## Adding things

@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<p>You can find me on <a href="{{ site.scholar }}">Google Scholar</a>. My <a href="{{ base }}/cv/Kizilcec_CV.pdf">CV</a> lists publications by type.</p>
-<p class="disclaimer"><em>Disclaimer: Electronic copies of papers are provided as a professional courtesy to ensure timely dissemination of academic work for individual, non-commercial purposes. Copyright resides with the respective copyright holders, as stated within each paper. These files may not be re-posted without permission.</em></p>
+<section>
+<h2 class="page-title">Publications</h2>
+<p>Also on <a href="{{ site.scholar }}">Google Scholar</a>. The <a href="{{ base }}/cv/Kizilcec_CV.pdf">CV</a> lists them by type.</p>
+<p class="disclaimer">Electronic copies of papers are provided as a professional courtesy to ensure timely dissemination of academic work for individual, non-commercial purposes. Copyright resides with the respective copyright holders, as stated within each paper. These files may not be re-posted without permission.</p>
 {% for y, items in by_year %}
-<h2 class="year">{{ y }}</h2>
-{% for p in items %}<p class="pub">{{ p.cite_html }}{% if p.note %} <strong>{{ p.note }}</strong>{% endif %}</p>{% endfor %}
+<h3 class="year">{{ y }}</h3>
+{% for p in items %}<p class="pub">{{ p.cite_html }}{% if p.note %} <span class="award">{{ p.note }}</span>{% endif %}</p>{% endfor %}
 {% endfor %}
+</section>
 {% endblock %}

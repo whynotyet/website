@@ -1,26 +1,46 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="intro">
-  <div class="intro-text">
-    <p><strong>Rene F. Kizilcec, Ph.D.</strong><br>
-    {% for r in site.roles %}{{ r.text_before }}<a href="{{ r.url }}">{{ r.link }}</a>{{ r.text_after }}<br>{% endfor %}
-    {% for f in site.fellowships %}{{ f }}<br>{% endfor %}</p>
-    <p>Contact: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>Office: {{ site.office }}</p>
-    <p><a href="{{ base }}/cv/Kizilcec_CV.pdf">Curriculum Vitae</a></p>
-  </div>
-  <figure class="intro-photo"><img src="{{ site.headshot|local }}" alt="Rene Kizilcec Photo"></figure>
-</div>
+<section class="bio">
+  {% for para in site.bio_long %}<p>{{ para | md }}</p>{% endfor %}
+  <details><summary>Short bio, for introductions</summary><p>{{ site.bio_short | md }}</p></details>
+</section>
 
-<p><strong>Bio (short):</strong> {{ site.bio_short | md }}</p>
-<p><strong>Bio (long):</strong> {{ site.bio_long[0] | md }}</p>
-{% for para in site.bio_long[1:] %}<p>{{ para | md }}</p>{% endfor %}
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+  {% for p in site.projects %}
+    <a class="project" href="{{ p.url }}">
+      <span class="logo">{% if p.logo_text %}<img src="{{ base }}{{ p.logo }}" alt="" class="mark"><span class="logo-text">{{ p.logo_text | safe }}</span>{% else %}<img src="{{ base }}{{ p.logo }}" alt="{{ p.name }}">{% endif %}</span>
+      <span class="blurb"><span class="pname">{{ p.name }}</span>{{ p.blurb }}</span>
+    </a>
+  {% endfor %}
+  </div>
+</section>
 
 {% if site.news %}
-<h2>Recent News</h2>
-<ul class="news">{% for n in site.news[:6] %}<li><strong>{{ n.date }}</strong> {{ n.text | md }}</li>{% endfor %}</ul>
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">{% for n in site.news[:6] %}<li><span class="date">{{ n.date }}</span><span>{{ n.text | md }}</span></li>{% endfor %}</ul>
+</section>
 {% endif %}
 
-<h2>Selected Press</h2>
-{% if media %}<p><strong>Recent coverage:</strong> {% for m in media %}{% if m.url %}<a href="{{ m.url }}">{{ m.text | striptags_md }}</a>{% else %}{{ m.text | md }}{% endif %}{% if not loop.last %}; {% endif %}{% endfor %}.</p>{% endif %}
-{% for t in site.press_topics %}<p><strong>On {{ t.topic }}:</strong> {% for name, url in t.links %}<a href="{{ url }}">{{ name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endfor %}
+<section id="publications">
+  <h2>Selected publications</h2>
+  <ul class="selected">{% for p in selected %}<li>{% if p.href %}<a href="{{ p.href }}">{{ p.title | md }}</a>{% else %}{{ p.title | md }}{% endif %}<br><span class="meta">{{ p.short_authors }} · {{ p.short_venue | md }}, {{ p.year_label }}</span></li>{% endfor %}</ul>
+  <p class="more"><a href="{{ base }}/publications/">All publications, with PDFs</a> &nbsp;·&nbsp; <a href="{{ site.scholar }}">Google Scholar</a></p>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <div class="courses">
+  {% for c in teaching.courses %}{% set d = site.course_descriptions.get(c.code) %}
+    {% if d %}<details class="course"><summary><span class="ctitle">{{ c.title }}</span> <span class="code">{{ c.code }}</span></summary>
+      <div class="cbody"><p>{{ d.text | md }}</p>
+      {% if d.outcomes %}<p class="olabel">{{ d.outcomes_label }}</p><ol>{% for o in d.outcomes %}<li>{{ o }}</li>{% endfor %}</ol>{% endif %}
+      {% if d.after %}<p>{{ d.after | md }}</p>{% endif %}
+      {% if c.offered %}<p class="offered">Offered {{ c.offered }}</p>{% endif %}</div></details>
+    {% else %}<div class="course plain"><span class="ctitle">{{ c.title }}</span> <span class="code">{{ c.code }}</span>{% if c.offered %} <span class="offered">· {{ c.offered }}</span>{% endif %}</div>{% endif %}
+  {% endfor %}
+  </div>
+</section>
 {% endblock %}
