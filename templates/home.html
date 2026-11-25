@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="bio">
-  {% for para in site.bio_long %}<p>{{ para | md }}</p>{% endfor %}
+<section class="bio" id="about">
+  <h2>About</h2>
+  {% for para in site.bio %}<p>{{ para | md }}</p>{% endfor %}
   <details><summary>Short bio, for introductions</summary><p>{{ site.bio_short | md }}</p></details>
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2>Lab and Major Initiatives</h2>
   <div class="projects">
   {% for p in site.projects %}
     <a class="project" href="{{ p.url }}">
@@ -26,12 +27,15 @@
 
 <section id="publications">
   <h2>Selected publications</h2>
-  <ul class="selected">{% for p in selected %}<li>{% if p.href %}<a href="{{ p.href }}">{{ p.title | md }}</a>{% else %}{{ p.title | md }}{% endif %}<br><span class="meta">{{ p.short_authors }} · {{ p.short_venue | md }}, {{ p.year_label }}</span></li>{% endfor %}</ul>
+  {% for g in selected %}
+  <h3 class="topic">{{ g.topic }}</h3>
+  <ul class="selected">{% for p in g.papers %}<li>{% if p.href %}<a href="{{ p.href }}">{{ p.title | md }}</a>{% else %}{{ p.title | md }}{% endif %}<br><span class="meta">{{ p.short_authors }} · {{ p.short_venue | md }}, {{ p.year_label }}{% if p.note %} · <span class="award">{{ p.note }}</span>{% endif %}</span></li>{% endfor %}</ul>
+  {% endfor %}
   <p class="more"><a href="{{ base }}/publications/">All publications, with PDFs</a> &nbsp;·&nbsp; <a href="{{ site.scholar }}">Google Scholar</a></p>
 </section>
 
 <section id="teaching">
-  <h2>Teaching</h2>
+  <h2>Teaching at Cornell</h2>
   <div class="courses">
   {% for c in teaching.courses %}{% set d = site.course_descriptions.get(c.code) %}
     {% if d %}<details class="course"><summary><span class="ctitle">{{ c.title }}</span> <span class="code">{{ c.code }}</span></summary>

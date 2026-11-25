@@ -109,25 +109,43 @@ def short_authors(a):
     return ", ".join(last[:-1]) + " & " + last[-1] if len(last) > 1 else (last[0] if last else "")
 
 
+VENUE_ABBR = [("CHI Conference", "CHI"), ("Fairness, Accountability", "FAccT"), ("Computer Supported Cooperative Work", "CSCW"),
+              ("Learning@ Scale", "L@S"), ("Learning at Scale", "L@S"), ("AI, Ethics, and Society", "AIES"),
+              ("Proceedings of the National Academy of Sciences", "PNAS"), ("PNAS nexus", "PNAS Nexus")]
+
+
 def short_venue(v):
     v = re.sub(r"^In\s+", "", v or "")
+    for key, abbr in VENUE_ABBR:
+        if key.lower() in v.lower():
+            return "*" + abbr + "*"
+    m = re.search(r"\(([A-Z][A-Za-z@&]+)\s*[’']\d\d\)", v)
+    if m:
+        return "*" + m.group(1) + "*"
     m = re.match(r"\*([^*]+)\*", v)
     name = m.group(1) if m else v.split(",")[0]
-    name = re.sub(r",?\s*\d.*$", "", name).strip().rstrip(",")
-    name = {"Proceedings of the National Academy of Sciences (PNAS)": "PNAS", "PNAS nexus": "PNAS Nexus"}.get(name, name)
+    name = re.sub(r",?\s*\d.*$", "", name).strip().rstrip(",.")
     return "*" + name + "*"
 
 
 by_title = {p["title"]: p for p in pubs_sorted}
-selected = []
-for t in site.get("selected_publications", []):
+
+
+def pub_view(t):
     p = by_title.get(t)
     if not p:
         print("WARNING: selected publication not found:", t)
-        continue
+        return None
     href = p.get("pdf") or p.get("url")
-    selected.append(dict(p, href=local(href) if href else None,
-                         short_authors=short_authors(p.get("authors")), short_venue=short_venue(p.get("venue"))))
+    return dict(p, href=local(href) if href else None,
+                short_authors=short_authors(p.get("authors")), short_venue=short_venue(p.get("venue")))
+
+
+selected = []
+for g in site.get("selected_publications", []):
+    papers = [v for v in (pub_view(t) for t in g["papers"]) if v]
+    if papers:
+        selected.append({"topic": g["topic"], "papers": papers})
 ctx["selected"] = selected
 
 PAGES = {

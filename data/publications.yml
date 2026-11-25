@@ -3,6 +3,7 @@
   authors: Chirikov, I., Smirnov, I., & Kizilcec, R. F.
   title: Generative AI use and misuse call for assessment reform in higher education
   venue: Science, 392(6800), 818–820.
+  url: https://www.semanticscholar.org/paper/469338ac03e0be0d1abedb152aebe6caacbfd896
   cite: Chirikov, I., Smirnov, I., & Kizilcec, R. F. (2026). Generative AI use and misuse call for assessment reform in higher education. Science, 392(6800), 818–820.
 - type: science
   year: 2025
@@ -110,6 +111,7 @@
   title: Teacher-AI collaboration for curating and customizing lesson plans in low-resource schools
   venue: '*Computer Supported Cooperative Work (CSCW).*'
   note: Honorable Mention Award
+  url: https://www.semanticscholar.org/paper/a32e5e7517972a21fb9c9da7ebf54331de493b55
   cite: Dennison, D. V., Ahtisham, B., Chourasia, K., Arora, N., Singh, R., Kizilcec, R. F., Nambi, A., Ganu, T., & Vashistha, A. (2026). Teacher-AI collaboration for curating and customizing lesson plans in low-resource schools. *Computer Supported Cooperative Work (CSCW).*
 - type: journal
   year: 2025
@@ -367,6 +369,7 @@
   authors: Harvey, E., Koenecke, A., & Kizilcec, R. F.
   title: Data Annotation as Measurement
   venue: In *Proceedings of the 9th AAAI/ACM Conference on AI, Ethics, and Society (AIES ’26).*
+  url: https://www.semanticscholar.org/paper/514e5bcfedbbee6e61e48e3660b618254ada2ecc
   cite: Harvey, E., Koenecke, A., & Kizilcec, R. F. (2026). Data Annotation as Measurement. In *Proceedings of the 9th AAAI/ACM Conference on AI, Ethics, and Society (AIES ’26).*
 - type: conference
   year: 2026
@@ -403,6 +406,7 @@
   authors: Liu, C., Hoang, L., Kizilcec, R. F., & Wu, B.
   title: A large‑scale analysis of student behavior with pedagogically constrained LLM tutors
   venue: In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)* (pp. 242–253).
+  url: https://www.semanticscholar.org/paper/801901b328c782c8c665b84fcb7cdf11d445b118
   cite: Liu, C., Hoang, L., Kizilcec, R. F., & Wu, B. (2026). A large‑scale analysis of student behavior with pedagogically constrained LLM tutors. In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)* (pp. 242–253).
 - type: conference
   year: 2026
@@ -410,6 +414,7 @@
   title: 'Comparing Teacher and AI-Generated Feedback in the Writing Classroom: Experimental Results from Secondary School Classrooms'
   venue: In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)*.
   note: Best Paper Award Nomination
+  url: https://www.semanticscholar.org/paper/c38a43474756a91f64c80db5e8267773a5fa3a4b
   cite: 'Meyer, J., Steinbach, M., Schiller, R., Mertens, U., Schaller, N.‑J., Horbach, A., Fleckenstein, J., Köller, O., Kizilcec, R. F., & Jansen, T. (2026). Comparing Teacher and AI-Generated Feedback in the Writing Classroom: Experimental Results from Secondary School Classrooms. In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)*.'
 - type: conference
   year: 2026
@@ -428,6 +433,7 @@
   authors: Vanacore, K., Lee, J., Ahtisham, B., Shaw, S., Reich, J., & Kizilcec, R. F.
   title: 'From tutor moves to tutoring states: Modeling the timing and sequencing of pedagogical strategies for student engagement'
   venue: In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)* (pp. 339–349).
+  url: https://www.semanticscholar.org/paper/92593395c016d41104a6b8742935e19d917dabc3
   cite: 'Vanacore, K., Lee, J., Ahtisham, B., Shaw, S., Reich, J., & Kizilcec, R. F. (2026). From tutor moves to tutoring states: Modeling the timing and sequencing of pedagogical strategies for student engagement. In *Proceedings of the 13th ACM Conference on Learning@ Scale (L@S ’26)* (pp. 339–349).'
 - type: conference
   year: 2026
@@ -447,6 +453,7 @@
   title: A framework for auditing chatbots for dialect-based quality-of-service harms
   venue: In *Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency* (pp. 2025–2039).
   note: Best Paper Award
+  url: https://www.semanticscholar.org/paper/f74ca28626f5868bb9146282d7c321f563201f3e
   cite: Harvey, E., Kizilcec, R. F., & Koenecke, A. (2025). A framework for auditing chatbots for dialect-based quality-of-service harms. In *Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency* (pp. 2025–2039).
 - type: conference
   year: 2025
@@ -517,10 +524,11 @@
 - type: conference
   year: 2025
   authors: Harvey, E. H., Koenecke, A., & Kizilcec, R. F.
-  title: 'Don''t Forget the Teachers": Towards an Educator-Centered Understanding of Harms from Large Language Models in Education'
+  title: '“Don''t Forget the Teachers”: Towards an Educator-Centered Understanding of Harms from Large Language Models in Education'
   venue: In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.* ACM.
   note: Best Paper Award
-  cite: 'Harvey, E. H., Koenecke, A., & Kizilcec, R. F. (2025). "Don''t Forget the Teachers": Towards an Educator-Centered Understanding of Harms from Large Language Models in Education. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.* ACM.'
+  url: https://www.semanticscholar.org/paper/24c20ced0bbac3296ff30664a55fa31d118a7000
+  cite: 'Harvey, E. H., Koenecke, A., & Kizilcec, R. F. (2025). “Don''t Forget the Teachers”: Towards an Educator-Centered Understanding of Harms from Large Language Models in Education. In *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.* ACM.'
 - type: conference
   year: 2025
   authors: Williamson, K. H., Kizilcec, R. F., Fath, S., & Heffernan, N.
