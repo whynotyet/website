@@ -21,7 +21,7 @@
 {% if site.news %}
 <section id="news">
   <h2>News</h2>
-  <ul class="news">{% for n in site.news[:6] %}<li><span class="date">{{ n.date }}</span><span>{{ n.text | md }}</span></li>{% endfor %}</ul>
+  <ul class="news">{% for n in site.news[:8] %}<li><span class="date">{{ n.date }}</span><span>{{ n.text | md }}</span></li>{% endfor %}</ul>
 </section>
 {% endif %}
 
