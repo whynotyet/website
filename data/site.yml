@@ -73,7 +73,7 @@ projects:   # cards on the home page, each linking out
 selected_publications:
   - topic: Learning with AI
     papers:
-      - A large‑scale analysis of student behavior with pedagogically constrained LLM tutors
+      - Generative AI use and misuse call for assessment reform in higher education
       - "Comparing Teacher and AI-Generated Feedback in the Writing Classroom: Experimental Results from Secondary School Classrooms"
       - Teacher-AI collaboration for curating and customizing lesson plans in low-resource schools
   - topic: The science of tutoring
@@ -83,10 +83,10 @@ selected_publications:
       - Data Annotation as Measurement
   - topic: AI, fairness, and higher education
     papers:
-      - Generative AI use and misuse call for assessment reform in higher education
       - "“Don't Forget the Teachers”: Towards an Educator-Centered Understanding of Harms from Large Language Models in Education"
       - A framework for auditing chatbots for dialect-based quality-of-service harms
       - Cultural bias and cultural alignment of large language models
+      - Evaluating a Learned Admission-Prediction Model as a Replacement for Standardized Tests in College Admissions
 
 news:
   - date: 2026
